@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--- Página INDEX ---*/
+/* Templeate Grid */
+#contendor_grid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "footer footer footer";
+}
+.header_grid{
+    grid-area: header;
+}
+.section1_grid{
+    grid-area: section1;
+}
+.section2_grid{
+    grid-area: section2;
+}
+.section3_grid{
+    grid-area: section3;
+}
+.footer_grid{
+    grid-area: footer;
+}
+/*-- Header_Content = Header + Wave + Título --*/
+.header_content{
+    height: 60vh;
+    position: relative;
+    flex-flow: row wrap;
+    display: flex;
+    width: 100%;
+}
+.titulo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+.linea1{
+    margin-top: 50px;
+}
+.linea2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/* Background Banner */
+.header_content.background_index{
+    background-image: linear-gradient(to right, #0d7a1855, #00273159), url(../multimedia/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header_content.background_index.background_index-home{
+    background-attachment: fixed;
+}
+/* Header = Logo + Nav */
+.header{                   
+    background: #052922c4;/*oscuro:#0a2420c5 ; primero: #2e8d7fc5*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.logo, .nav{
+    padding: 10px;
+}
+.nav.nav_item ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav li{
+    list-style: none;
+}
+.menu_navigation{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+    margin: 3px;
+    line-height: 30px;
+}
+.menu_navigation.menu_navigation-selected{
+    color: #1BECCD;
+    font-weight: 600;
+}
+/*Wave*/
+.header_content .wave{
+    position: absolute;
+    width: 100%;
+    bottom: -3%;
+}
+
+/*-- Secciones Index --*/
+.section{
+    height: 50vh;
+}
+/* Primera Sección Index */
+.section__1{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto_sec1{
+    color: #2e8d7f;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+/* Segunda Sección Index */
+.section.section__2{
+    background-color: #1beccd;
+    height: 30vh;
+}
+.contenedor_section{
+   /* width: 90%;*/
+    margin: 0 auto;
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.card1, .card2, .card3{
+    background-color: #fff;
+    width: 25%;
+    display: inline-block;
+    margin: -5% ;
+    text-align: center;
+    border: 0.1px solid rgba(158, 158, 158, 0.493);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+.card_icon{
+width: 100px;
+}
+.card_title{
+    font-size: 16px;
+}
+.card1 p, .card2 p, .card3 p{
+    margin-bottom: 20px;
+    padding: 5px;   
+    margin: 5px;
+}
+.card_text{
+    font-size: 14px;
+}
+.btn{
+    margin-bottom: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    background-color:#1beccd;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.section img{
+    display:none ;
+}
+
+/* Tercera Sección Index: galería Grids */ 
+.section3_grid{
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+/*Galería Grid*/
+
+.contenedorGrid_galeria{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 img1 contenido1 "
+    "contenido2 img2 img2 img2"
+    "img3 img3 img3 contenido3";
+    height: 90%;
+    grid-gap: 1rem;
+}
+.img1_grid{
+    grid-area: img1;
+    background-color: coral;
+    background-image: url(../multimedia/imgPareja1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenido1_grid{
+    grid-area: contenido1;
+    background-color: rgba(118, 255, 255, 0.904);
+    align-self: stretch;
+    justify-self: stretch;
+    background-image: linear-gradient(to right, #0f344348, #1b5e429f);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.anidados{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+.tit1{
+    max-width: 60%;
+    display: flex;
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.btn_galeria a{
+    background: #0725314b;
+}
+.img2_grid{
+    grid-area: img2;
+    background-color: rgb(80, 220, 255);
+    background-image: url(../multimedia/brazos.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.contenido2_grid{
+    grid-area: contenido2;
+    background-color: rgba(118, 255, 255, 0.904);
+    background-image: linear-gradient(to right, #1b5e429f, #0f344348)
+    
+}
+.img3_grid{
+    grid-area: img3;
+    background-color: rgb(249, 80, 255);
+    background-image: url(../multimedia/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contenido3_grid{
+    grid-area: contenido3;
+    background-color: rgba(118, 255, 255, 0.904);
+    background-image: linear-gradient(to right, #0f344348, #1b5e429f);
+}
+
+/*--- Segunda Página: ABOUT ---*/
+/* Background banner */
+.header_content.background_index.background_index-about{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/deEspalda.jpg);
+    background-attachment: fixed;
+}
+/* Sección Sobre Mi */
+.section.section_about{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_about{
+    width: 70%;
+    display: flex;
+}
+.text_about{
+    width: 50%;
+    background-color: #daa403b9;
+    padding: auto 0;
+}
+.img_about1{
+    width: 50%;
+    background-color: sandybrown;
+    background: url(../multimedia/img_aboutRec.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto_sec1.p_about{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding: 15px 5px;
+}
+
+/*--- Tercera Página: CLASES ---*/
+/* Header Clases.html*/
+
+.bg-video{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: contain;
+    object-fit: cover; /*pantalla completa*/
+}
+.bg-video{
+    filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 255, 221, 0.877));
+}
+.header_content.header_clases{
+    width: 100%;
+    height: 35vh;
+    background-position: center;
+    top: 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+.header_clases{
+    position: absolute;
+    z-index: 10000;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000050;
+    z-index: -1;
+}
+.overlay.overlay_clases{
+    background: #2adae04b;
+
+}
+
+/* clasesYoutube */
+.clasesYoutube{
+    text-align: center;
+    padding: 20px;
+}
+.clasesYoutube p{
+    padding: 10px;
+    color: #2e8d7f;
+    font-weight: 500;
+}
+.contenedor_clases{
+    display: inline-block;
+    background-color: rgb(9, 247, 255);
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/*--- Cuarta Página: TIENDA ---*/
+.header_content.background_index.background_index-tienda{
+    height: 50vh;
+    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/bk_tienda2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.section.section__1.section-tienda{
+    height: 30vh;
+}
+
+/*--- Quinta Página: CONTACTO ---*/
+/* Formulario */
+.contenedor_form{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contenedor_form p{
+    color: #1beccd;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.contenedor_form span{
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.contenedor_form .bk_form{
+    background: #0f3b3be3;
+    width: 60%; 
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+.formInput, .formText{
+    font-size: 15px;
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+    text-align: start;
+    background-color: #12d494e3;
+    color: #fff;
+    border-radius: 20px solid #AEA8A8;
+}
+.formBtn{
+    background:#1beccd ;
+    color: #0f3b3be3;
+}
+.formLabel{
+    color: #1beccd;
+    font-size: 16px;
+}
+/*--- Footer ---*/
+.footer-contenedor{
+   /* margin: auto;*/
+    height: 10vh;
+    width: 100%;
+    background-color:#1beccd;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+}
+.seguinos{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.nav-footer ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav-footer li{
+    list-style: none;
+}
+.menu_footer{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 30px;
+}
+
+/* Responsive Media queries */
+/*A partir de 768px en adelante*/
+@media all and (max-width:768px){
+    
+    .header{
+        height: 250px;
+        background-color:#05292283 ;
+        position: relative;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .nav ul li{
+        width: 100%;
+        text-align: ce;
+        font-size: 1rem;
+    }
+    .titulo{
+        justify-content: flex-end;
+        padding-bottom: 45%;
+        font-size: 1rem;
+    }
+    .titulo .linea2{
+        font-size: 0.9rem;
+    }
+    .header_content{
+        height: 50vh;
+    }
+    
+    .section3_grid{
+        width: 90%;
+        margin: auto;
+        height: 120vh;
+    }
+    .contenedorGrid_galeria{
+    grid-template-areas: 
+    "img1 img1 img1 img1 "
+    "contenido1 contenido1 contenido1 contenido1"
+    "img2 img2 img2 img2"
+    "contenido2 contenido2 contenido2 contenido2"
+    "img3 img3 img3 img3"
+    "contenido3 contenido3 contenido3 contenido3";
+    }
+   .section.section_about {
+       width: 80%;
+       margin: auto;
+    background: linear-gradient(to right, #5e4606ad, #02242c85), url(../multimedia/img_about.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+   .contenedor_about{
+        flex-flow: column wrap;
+   }
+   .text_about{
+        width: 100%;
+        background-color: rgba(27, 15, 3, 0.192);
+   }
+   .text_about .texto_sec1.p_about{
+       font-size: 0.8rem;
+   }
+}
+/*Desde 768px hasta 986px*/
+
+@media all and (min-width:768px) and (max-width:986px){
+    .section.section_about{
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor_about{
+        width: 110%;
+        flex-flow: row wrap;
+    }
+    .text_about{
+        width: 70%;
+        margin: auto;
+    }
+    .img_about1{
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        height: 50vh;
+    }
+    .text_about .texto_sec1.p_about{
+        font-size: 0.9rem;
+    }
+}
