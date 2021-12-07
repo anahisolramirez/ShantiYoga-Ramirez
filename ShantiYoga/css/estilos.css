@@ -575,7 +575,7 @@ width: 100px;
 .scale:hover{
     transform: scale(1.1);
 }
-/* Segunda animación */
+/* Segunda animación Rotación de las Cards */
 .card1:hover{
     background: rgb(1, 199, 123);
     color: #fff;
@@ -590,4 +590,13 @@ width: 100px;
     background: rgb(1, 199, 123);
     color: #fff;
     transform: rotate(3deg);
+}
+
+/*Tercera animación Menu Hover*/
+.menu_navigation:hover{
+    cursor: pointer ;
+    color: rgb(1, 199, 123);
+    border-bottom: solid 2px rgb(1, 199, 123);
+    width: 30%;
+    font-weight: 300;
 }
