@@ -575,3 +575,19 @@ width: 100px;
 .scale:hover{
     transform: scale(1.1);
 }
+/* Segunda animación */
+.card1:hover{
+    background: rgb(1, 199, 123);
+    color: #fff;
+    transform: rotate(3deg);
+}
+.card2:hover{
+    background: rgb(1, 199, 123);
+    color: #fff;
+    transform: rotate(3deg);
+}
+.card3:hover{
+    background: rgb(1, 199, 123);
+    color: #fff;
+    transform: rotate(3deg);
+}
