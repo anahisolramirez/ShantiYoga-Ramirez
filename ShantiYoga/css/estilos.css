@@ -567,3 +567,11 @@ width: 100px;
         font-size: 0.9rem;
     }
 }
+/* Animaciones */
+/* Primera Animación Cambio de escala en Galería Grid */
+.section3_grid .contenedorGrid_galeria .uno, .dos, .tres{
+    transition: all 200ms ease-in-out;
+}
+.scale:hover{
+    transform: scale(1.1);
+}
