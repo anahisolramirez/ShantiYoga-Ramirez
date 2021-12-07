@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShantiYoga</title>
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div id="contendor_grid"> <!-- Contenedor Template -->
@@ -35,11 +38,11 @@
         <div class="section1_grid"> <!-- Primera Sección -->
             <div class="section section_about"> <!-- Párrafo + Foto -->
                 <div class="contenedor_about">
-                    <div class="text_about">
+                    <div class="text_about animate__animated animate__slideInLeft"> <!-- Animación desde la izquierda --> 
                         <p class="texto_sec1 p_about">Te cuento un poco sobre mí, soy Docente y Terapeuta corporal. Me gradué en la Univesidad Nacional de las Artes (UNA) como Profesora de Artes en Danza con orientación en expresión corporal. Inmediatamente después inicié un camino de aprendizaje y formación en múltiples disciplinas holísticas. Siempre en búsqueda de desarrollar todo mi potencial creativo, didáctico, académico y espiritual con el objetivo de ayudar a otras personas a incorporar diversos recursos que les permita vivir con mayor bienestar, concentración y paz.
                         </p>
                     </div>
-                    <div class="img_about1">
+                    <div class="img_about1 animate__animated animate__slideInRight"> <!-- Animación desde la derecha -->
 
                     </div>
                 </div>
@@ -62,6 +65,9 @@
         </div>
 
     </div>
-
+    <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

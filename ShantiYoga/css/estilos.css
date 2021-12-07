@@ -600,3 +600,7 @@ width: 100px;
     width: 30%;
     font-weight: 300;
 }
+/* wow animación*/
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 1s;
+}
