@@ -489,12 +489,12 @@ width: 100px;
     .logo{
         width: 100%;
         text-align: center;
-    }
+    }/*
     .nav ul li{
         width: 100%;
         text-align: ce;
         font-size: 1rem;
-    }
+    }*/
     .titulo{
         justify-content: flex-end;
         padding-bottom: 45%;
@@ -603,4 +603,27 @@ width: 100px;
 /* wow animación*/
 .animate__animated.animate__slideInLeft {
     --animate-duration: 1s;
+}
+/*Bootstrap*/
+/*Items Nav*/
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+/*Boton hamburguesa*/
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+.navbar-toggler{
+    color: #fff;
+
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
 }
