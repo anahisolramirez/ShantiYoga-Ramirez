@@ -627,3 +627,47 @@ width: 100px;
     color: #fff;
     text-decoration: none;
 }
+/*Carrousel*/
+.carousel.slide{
+  /*  height: 80vh;*/
+    overflow: hidden;
+    background: rgb(0, 228, 152);
+    max-height: 900px;
+}
+.navbar{
+    background: rgba(5, 32, 13, 0.568);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+.navbar-nav li a{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.navbar-nav li a:hover{
+    color: rgb(0, 228, 152);
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: rgb(0, 228, 152);
+}
+.container_header{
+    position: relative;
+}
+.navbar-toggler span{
+    color: white;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+.icon-hamburguesa{
+    color: #fff;
+
+}
+.nav-link.active{
+    color:rgb(0, 243, 211) ;
+}

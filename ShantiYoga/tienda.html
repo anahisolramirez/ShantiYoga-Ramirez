@@ -10,40 +10,67 @@
 
 </head>
 <body>
-     <!-- Nav Bootstrap -->
-     <nav class="navbar navbar-expand-md navbar-dark bg-success p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand col-4" href="index.html"><p>ShantiYoga</p></a> <!-- Logo -->
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse col-8 justify-content-around p-2" id="navbarNav"> <!-- Menu Navegable -->
-                <ul class="navbar-nav">
-                    <li class="nav-item p-2">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="about.html">Sobre mi</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="clases.html">Clases</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link active" href="tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item p-2">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+    <div class="container-fluid container_header m-0 p-0">
+        <!-- Nav Bootstrap -->
+        <nav class="d-flex navbar navbar-expand-md p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand col-4" href="index.html"><p>ShantiYoga</p></a> <!-- Logo -->
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse col-8 justify-content-around p-2" id="navbarNav"> <!-- Menu Navegable -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+        </nav> <!-- Fin Nav Bootstrap -->
+        <!-- Carousel Bootstrap -->
+        <div id="carouselTienda" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselTienda" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselTienda" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselTienda" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselTienda" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselTienda" data-bs-slide-to="4" aria-label="Slide 5"></button>
 
-        </div>
-    </nav> <!-- Fin Nav Bootstrap -->
-    
-    <div class="container-fluid m-0 p-0">
-
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carrousel/carrousel0.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrousel/carrousel1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrousel/carrousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrousel/carrousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="carrousel/carrousel5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            
+        </div> <!-- Fin Carousel Bootstrap -->
     </div>
 
     <div class="section section__1 section-tienda"> 
