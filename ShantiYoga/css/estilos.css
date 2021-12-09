@@ -634,6 +634,7 @@ width: 100px;
     background: rgb(0, 228, 152);
     max-height: 900px;
 }
+/*Nav*/
 .navbar{
     background: rgba(5, 32, 13, 0.568);
     position: absolute;
@@ -664,10 +665,26 @@ width: 100px;
 .navbar-toggler-icon{
     color: #fff;
 }
-.icon-hamburguesa{
-    color: #fff;
 
-}
 .nav-link.active{
     color:rgb(0, 243, 211) ;
+}
+/* Seccion uno tienda */
+.paragraph{
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #2e8d7f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.paragraph2{
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+/* Cards */
+.card-transform{
+    transition: all ease-in-out 0.2s;
+}
+.card-transform:hover{
+    transform: scale(1.05);
 }
