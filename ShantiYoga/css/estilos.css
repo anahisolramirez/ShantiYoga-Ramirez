@@ -688,3 +688,7 @@ width: 100px;
 .card-transform:hover{
     transform: scale(1.05);
 }
+.menu_footer:hover{
+    color: rgb(1, 199, 123);
+
+}
