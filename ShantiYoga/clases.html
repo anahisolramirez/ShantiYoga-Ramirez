@@ -4,42 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShantiYoga</title>
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
 <body>
-    <div class="header_content header_clases"> 
-        <video class="bg-video" onloadedmetadata="this.muted=true" autoplay loop> <!-- Video Background -->
-                <source src="multimedia/speed_HitPawOnline_161257.mp4-hitpaw.HitPawOnline_161257.mp4.mp4">
-        </video>
-        <div class="header header_clases"> <!-- Header: Logo + Nav -->
-            <div class="overlay overlay_clases">
+    <div class="container-fluid m-0 p-0"> <!-- Header: Nav + videos background + Frase  -->
+
+        <!-- Nav Bootstrap -->
+        <nav class="d-flex navbar navbar-expand-md p-2">
+            <div class="container-fluid">
+                <video class="bg-video bg-videoClases" onloadedmetadata="this.muted=true" autoplay loop> <!-- Video Background -->
+                    <source src="multimedia/speed_HitPawOnline_161257.mp4-hitpaw.HitPawOnline_161257.mp4.mp4">
+                </video>
+
+                <a class="navbar-brand col-4 navbarClases" href="index.html"><p>ShantiYoga</p></a> <!-- Logo -->
+                
+                <button class="navbar-toggler navbarClases" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse col-8 justify-content-around p-2 navbarClases" id="navbarNav"> <!-- Menu Navegable -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link  active" href="clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="logo"> <!-- Logo -->
-                <p>ShantiYoga</p>
-            </div>
-            <div class="nav nav_item"> <!-- Nav -->
-                <ul>
-                    <li><a class="menu_navigation" href="index.html">Home</a></li>
-                    <li><a class="menu_navigation" href="about.html">Sobre mi</a></li>
-                    <li><a class="menu_navigation menu_navigation-selected" href="clases.html">Clases</a></li>
-                    <li><a class="menu_navigation" href="tienda.html">Tienda</a></li>
-                    <li><a class="menu_navigation" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="wave"> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,224C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        </div>
+        </nav> <!-- Fin Nav Bootstrap -->
+        
+        <!--
+        <div class="header_content header_clases"> 
+                <video class="bg-video" onloadedmetadata="this.muted=true" autoplay loop> 
+                        <source src="multimedia/speed_HitPawOnline_161257.mp4-hitpaw.HitPawOnline_161257.mp4.mp4">
+                </video>
+                <div class="header header_clases"> 
+                    <div class="overlay overlay_clases">
+                    </div>
+                    <div class="logo"> 
+                        <p>ShantiYoga</p>
+                    </div>
+                    <div class="nav nav_item"> 
+                        <ul>
+                            <li><a class="menu_navigation" href="index.html">Home</a></li>
+                            <li><a class="menu_navigation" href="about.html">Sobre mi</a></li>
+                            <li><a class="menu_navigation menu_navigation-selected" href="clases.html">Clases</a></li>
+                            <li><a class="menu_navigation" href="tienda.html">Tienda</a></li>
+                            <li><a class="menu_navigation" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wave"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,224C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                </div>
+        </div>-->
+        
     </div>
-    <div class="section section__1">
-        <div>
-            <p class="texto_sec1">En Shanti contamos con diferentes propuestas,
-                Clases de Yoga, Pilates, Reiki y mucho más!! 
-            </p>
-        </div>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0 section_Clases d-inline-block">
+        <span></span>
     </div>
+
+     <!-- Inicio Sección Bienvenida -->
+        <div class="container-fluid d-flex m-0 p-0  d-inline-block" >
+            <div class="contentClases d-flex mx-auto justify-content-center align-items-center col-12 flex-wrap p-4">
+                <p class="titClases1 text-center">
+                    ¡Bienvenidos al Centro Holístico Shanti!
+                </p>
+                <p class="d-flex m-0 p-1 titClases text-center">Aquí podrás encontrar diferentes propuestas, desde Clases de Yoga, Pilates o sesiones de Reiki, todas orientadas en incrementar tu Bienestar físico, anímico y mental.  En cada Práctica me propongo acompañarte en este Camino de aprendizaje continuo, progresivo y recíproco, para vivir con Plena conciencia y atención en el momento presente. Trabajaremos en la relajación, elasticidad, equilibrio y la fuerza.
+                Todas las Clases se adaptan a cada Grupo y a las necesidades particulares de las personas que los integran.</p>
+            </div>
+        </div> <!-- Fin sección Bienvenida -->
+
+    
+
+        <!-- Inicio Sección Hata Yoga -->
+        <div class="container-fluid d-flex m-0 mt-5 p-0  d-inline-block col-12" >
+            <div class="contentClases d-flex mx-auto justify-content-center align-items-center col-12 flex-wrap p-4 hataYoga">
+                <img class="p-2 d-flex col-12 iconClases" src="multimedia/iconHata.svg" alt="">
+                <p class="titClases1 text-center col-12 p-2">
+                    HATA YOGA
+                </p>
+                <p class="d-flex m-0 p-1 titClases text-center">Este estilo de Yoga es ideal si es tu primera experiencia en el Universo del Yoga, o si considerás que necesitás una Práctica más suave y centrada en tu propio rítmo. Nos Concentramos en la unión del cuerpo-mente-espítiru por medio de Pranayamas (técnicas de respiración), de Asanas (posturas), y de Meditación.</p>
+                <a class="btnClases" href="#">Saber más</a>
+            </div>
+        </div> <!-- Fin sección Hata Yoga-->
+
+        <!-- Inicio Sección Ashtanga Yoga -->
+        <div class="container-fluid d-flex m-0 mt-5 p-0  d-inline-block col-12" >
+            <div class="contentClases d-flex mx-auto justify-content-center align-items-center col-12 flex-wrap p-4 ashtangaYoga">
+                <img class="p-2 d-flex col-12 iconClases" src="multimedia/iconAshtanga.svg" alt="">
+                <p class="titClases1 text-center col-12 p-2">
+                    ASHTANGA YOGA
+                </p>
+                <p class="d-flex m-0 p-1 titClases text-center">Este tipo de Yoga es perfecto para quienes buscan más intensidad, desafío y exigencia. Se trata de una modalidad de Yoga más dinámica donde hacemos especial énfasis en la sincronización entre los movimientos y la respiración. Se practica en series de Asanas predefinidos, donde vamos avanzando de una postura a otra en forma continua y fluida. En cada Práctica buscamos la desintoxicación y alineación del cuerpo, trabajando con el sistema nervioso, la fuerza y la estabilidad. </p>
+                <a class="btnClases" href="#">Saber más</a>
+            </div>
+        </div> <!-- Fin sección Ashtanga Yoga-->
+
+        <!-- Inicio Sección Pilates -->
+        <div class="container-fluid d-flex m-0 mt-5 p-0  d-inline-block col-12" >
+            <div class="contentClases d-flex mx-auto justify-content-center align-items-center col-12 flex-wrap p-4 pilates">
+                <img class="p-2 d-flex col-12 iconClases" src="multimedia/iconPilates.svg" alt="">
+                <p class="titClases1 text-center col-12 p-2">
+                    PILATES
+                </p>
+                <p class="d-flex m-0 p-1 titClases text-center">Es una disciplina basada en el desarrollo de los músculos internos que ayudan a dar firmeza, equilibrio corporal y fortalecer la columna vertebral. Suele ser usado para rehabilitaciones, aliviar dolor de espalda o corregir postura corporal. Realizamos Pilates sobre camilla, a traves de ejercicios combinados de fuerza y elongación, regulamos los elementos y la intensidad de la rutina de acuerdo a las necesidades de cada persona. </p>
+                <a class="btnClases" href="#">Saber más</a>
+            </div>
+        </div> <!-- Fin sección Pilates-->
+
+        <!-- Inicio Sección Reiki -->
+        <div class="container-fluid d-flex m-0 mt-5 p-0  d-inline-block col-12" >
+            <div class="contentClases d-flex mx-auto justify-content-center align-items-center col-12 flex-wrap p-4 reiki">
+                <img class="p-2 d-flex col-12 iconClases" src="multimedia/iconReiki.svg" alt="">
+                <p class="titClases1 text-center col-12 p-2">
+                    REIKI
+                </p>
+                <p class="d-flex m-0 p-1 titClases text-center">A través del Reiki se puede sentir una relajación profunda, y una gran sensación de paz. En cada sesión buscamos armonizar tu energía vital, liberar bloqueos energéticos, liberar emociones reprimidas, aumentar vitalidad emocional y reducir el estrés o ansiedad.
+                    En ningún caso el Reiki es considerado como una terapia  científica capaz de reemplazar una práctica Médica! Reiki es un complemento alternativo y holistico para trabajar tu Energía y tu cuerpo espiritual, pero de ningún modo debe reemplazar tus cuidados y controles médicos.  </p>
+                <a class="btnClases" href="#">Saber más</a>
+            </div>
+        </div> <!-- Fin sección Reiki -->
+
+ 
+
+    
+
+    
+
+    
    
+    
+
+    
+
+
     <div class="clasesYoutube">
         <div>
             <p>Mirá mis clase desde la comodidad de tu Hogar</p>
@@ -47,6 +160,7 @@
         </div>
     </div>
     
+
     <!-- Footer -->
     <div class="footer-contenedor"> 
         <div class="seguinos">
@@ -61,5 +175,7 @@
         </div>
     </div>
 
+<!-- JS Bootstrap --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
