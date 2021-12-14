@@ -739,6 +739,7 @@ width: 100px;
 .titClases1{
     font-size: 1.4rem;
     color: #58F6BC;
+    transition: all ease-in-out 0.2s;
 }
 @media all and (min-width:768px){
     .titClases1{
@@ -787,4 +788,16 @@ width: 100px;
 .ashtangaYoga, .reiki{
     background: #ffff;
     margin-top: 1.5rem;
+    transition: all ease-in-out 0.2s;
+}
+.ashtangaYoga:hover, .reiki:hover{
+    background: #58f6bca2;
+    color: #fff;
+}
+
+.titClases1:hover{
+    color: rgb(255, 157, 29);
+    font-weight: 400;
+    font-size: 1.5rem;
+    box-shadow:  0 .1em rgba(255, 255, 255, 0.562);
 }
