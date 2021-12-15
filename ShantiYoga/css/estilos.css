@@ -489,12 +489,7 @@ width: 100px;
     .logo{
         width: 100%;
         text-align: center;
-    }/*
-    .nav ul li{
-        width: 100%;
-        text-align: ce;
-        font-size: 1rem;
-    }*/
+    }
     .titulo{
         justify-content: flex-end;
         padding-bottom: 45%;
@@ -506,7 +501,6 @@ width: 100px;
     .header_content{
         height: 50vh;
     }
-    
     .section3_grid{
         width: 90%;
         margin: auto;
@@ -711,7 +705,17 @@ width: 100px;
     font-size: 1.1rem;
     padding-top: 1.5em;
 }
-
+.section_Contacto{
+    height: 31vh;
+    box-sizing: border-box;
+}
+.section_Contacto::before{
+    content: ' ';
+    z-index: 10;
+    color: #fff;  
+    font-size: 1.1rem;
+    padding-top: 1.5em;
+}
 @media all and (min-width:768px){
     .section_Clases::before{
         font-size: 1.3rem;
