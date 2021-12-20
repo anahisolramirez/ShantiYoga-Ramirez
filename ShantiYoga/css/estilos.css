@@ -240,8 +240,10 @@ body{
     object-fit: cover; /*pantalla completa*/
 }
 .bg-video{
-    filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 255, 221, 0.877));
+    filter: opacity(75%) drop-shadow(0px 0px 1px rgba(0,0,0,.7));
 }
+/*background: rgba(0,0,0,.7)*/
+/* filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 255, 221, 0.877)); */
 .header_content.header_clases{
     width: 100%;
     height: 35vh;
@@ -287,6 +289,10 @@ body{
 }
 /*Clases Bootstrap*/
 /*Bienvenida*/
+.contentTiposClases{
+    background:#ededee ;
+    width: 100%;
+}
 .contentClases{
     width: 90%;
     background: #fff;
@@ -295,6 +301,8 @@ body{
     line-height: 1.9rem;
     font-size: 1rem;
     font-weight: 300;
+    border-radius: 2rem;
+
 }
 
 .titClases1{
@@ -342,7 +350,8 @@ body{
 }
 
 .hataYoga, .pilates {
-    background: #b8df6a33;
+    background: #38645aa6;
+    color: #ffff;
 }
 .ashtangaYoga, .reiki{
     background: #ffff;
@@ -373,50 +382,82 @@ body{
 }
 
 /*--- Página: CONTACTO ---*/
-/* Formulario */
-.contenedor_form{
-    display: inline-block;
+.secContacto{
+    height: 70vh;
+    background: #ededee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: url(../carrousel/carrousel9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+/* Formulario*/
+.contenedorForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-top: 30px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
-.contenedor_form p{
-    color: #1beccd;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
+
+.contenedorForm .form{
+    background: rgba(0,0,0,.7);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    padding-bottom:30px ;
+    border-radius: 3px;
+    margin-bottom: 20px;
 }
-.contenedor_form span{
-    font-weight: 400;
-    font-size: 20px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-.contenedor_form .bk_form{
-    background: #0f3b3be3;
-    width: 60%; 
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 15px;
-}
-.formInput, .formText{
-    font-size: 15px;
-    display: block;
-    margin: 10px auto;
-    width: 400px;
-    text-align: start;
-    background-color: #12d494e3;
+.contenedorForm .form .formTitle{
+    font-weight: normal;
+    font-family: sans-serif;
     color: #fff;
-    border-radius: 20px solid #AEA8A8;
+    text-align: center;
+    padding: 14px 0;
 }
-.formBtn{
-    background:#1beccd ;
-    color: #0f3b3be3;
-}
-.formLabel{
-    color: #1beccd;
+.contenedorForm .form .formLabel{
+    display: block; /*se ordenan uno debajo del otro */
+    color: rgb(255, 157, 29);
     font-size: 16px;
+}
+.contenedorForm .form .formInput, .formTextArea{
+    background: rgba(251, 251, 251, 0.2);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 157, 29);
+    width: 100%;
+    padding:12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;    
+}
+.contenedorForm .form .formTextArea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedorForm .form .btnSubmit{
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background: rgb(255, 157, 29);
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.contenedorForm .form .btnSubmit:hover{
+    background: rgb(0, 228, 152); /*rgb(250, 23, 110)*/
+    transition: all .5s ease;
 }
 /*--- Footer ---*/
 .footer-contenedor{
@@ -682,81 +723,15 @@ body{
 
     }
 }
-
 @media all and (min-width: 992px){
     .lgEstilos{
-        background: #b8df6a33;
+        background: #ffff;
+        color: #B7B7B7;
+        
+    }
+    .lgEstilos:hover{
+        background: #58f6bca2;
+        color: #fff;
     }
 }
 
-.secContacto{
-    height: 60vh;
-    background: #ededee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-/* Formulario*/
-.contenedorForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    padding-top: 30px;
-}
-
-.contenedorForm .form{
-    background: rgba(0,0,0,.7);
-    width: 90%;
-    max-width: 650px;
-    margin: auto;
-    padding: 5px 35px;
-    padding-bottom:30px ;
-    border-radius: 3px;
-    margin-bottom: 20px;
-}
-.contenedorForm .form .formTitle{
-    font-weight: normal;
-    font-family: sans-serif;
-    color: #fff;
-    text-align: center;
-    padding: 14px 0;
-}
-.contenedorForm .form .formLabel{
-    display: block; /*se ordenan uno debajo del otro */
-    color: rgb(255, 157, 29);
-    font-size: 16px;
-}
-.contenedorForm .form .formInput, .formTextArea{
-    background: rgba(251, 251, 251, 0.2);
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgb(255, 157, 29);
-    width: 100%;
-    padding:12px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    font-size: 14px;
-    color: #fff;    
-}
-.contenedorForm .form .formTextArea{
-    resize: vertical;
-    max-height: 150px;
-    min-height: 50px;
-}
-.contenedorForm .form .btnSubmit{
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border: none;
-    background: rgb(255, 157, 29);
-    color: #fff;
-    padding: 15px 0;
-    cursor: pointer;
-}
-.contenedorForm .form .btnSubmit:hover{
-    background: rgb(0, 228, 152); /*rgb(250, 23, 110)*/
-    transition: all .5s ease;
-}
