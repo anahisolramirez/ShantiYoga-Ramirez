@@ -608,9 +608,6 @@ body{
 .navbar-brand:hover{
     color: rgb(0, 228, 152);
 }
-.container_header{
-    position: relative;
-}
 .navbar-toggler span{
     color: white;
 }
