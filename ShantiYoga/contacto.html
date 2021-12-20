@@ -47,33 +47,43 @@
             </div>
         </nav> <!-- Fin Nav Bootstrap -->
     </div>
-
-    <div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0 section_Contacto d-inline-block">
+    
+    <div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0 section_Contacto">
         <span></span>
     </div>
+    
+    <div class="container-fluid m-0 p-0 secContacto">
+        <!-- Formulario -->
+        <!-- <p>Envianos tu consulta</p>
+        <p><span>nos pondremos en contacto con vos</span></p>-->
+        <div class="contenedorForm" >
+            <form action="" class="form">
+                <div class="formHeader">
+                    <h1 class="formTitle" >Contacto</h1>
+                </div>
 
-    <div class="contenedor_form"> <!-- Formulario -->
-        <p>Envianos tu consulta</p>
-        <p><span>nos pondremos en contacto con vos</span></p>
-        <form class="bk_form" action="" method="GET" enctype="multipart/form-data">
-            <div>   
-                <label for="nombre" class="formLabel">Nombre</label>
-                <input class="formInput" type="text" name="nombre" placeholder="Escribe tu nombre">
-                
-                <label for="correo" class="formLabel">Correo Electrónico</label>
-                <input class="formInput" type="text" name="correo" placeholder="Escribe tu correo">
-                
-                <label for="telefono" class="formLabel">Teléfono</label>
-                <input class="formInput" type="text" name="telefono" placeholder="Escribe tu teléfono">
-            </div>
-            <div>
-                <label for="mensaje" class="formLabel">Mensaje</label>
-                <textarea class="formText" name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-            </div>
-            <input class="formInput formBtn" type="submit" name="enviar" value="Enviar">
-        </form>
+                <label class="formLabel" for="nombre">Nombres:</label>
+                <input class="formInput" id="nombre" type="text" placeholder="Escriba su nombre" >
+            
+                <label class="formLabel" for="direccion">Dirección</label>
+                <input class="formInput" id="direccion" type="text" placeholder="Escriba su dirección" >
+
+                <label class="formLabel" for="correo">Correo Electrónico</label>
+                <input class="formInput" id="correo" type="email" placeholder="Escriba su correo" >
+
+                <label class="formLabel" for="mensaje">Mensaje</label>
+                <textarea id="mensaje" class="formTextArea" placeholder="Aquí escriba su mensaje" ></textarea>
+        
+                <input type="submit" class="btnSubmit" value="Enviar Consulta">
+            </form>
+        </div>
     </div>
     
+    <!-- Agregando Mapa -->
+    <div class="container-fluid m-0 p-0">   
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.447907248265!2d-58.50986063043084!3d-34.64263029314408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9dc84ba6bf1%3A0x6fa33ace67eba9f4!2sPlaza%20Larrazabal!5e0!3m2!1ses-419!2sar!4v1640023645761!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
     <!-- Footer -->
     <div class="footer-contenedor"> 
         <div class="seguinos">

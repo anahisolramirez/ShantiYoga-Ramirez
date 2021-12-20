@@ -659,7 +659,7 @@ body{
     padding-top: 1.5em;
 }
 .section_Contacto{
-    height: 31vh;
+    height: 30vh;
     box-sizing: border-box;
 }
 .section_Contacto::before{
@@ -686,6 +686,77 @@ body{
 @media all and (min-width: 992px){
     .lgEstilos{
         background: #b8df6a33;
-
     }
+}
+
+.secContacto{
+    height: 60vh;
+    background: #ededee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Formulario*/
+.contenedorForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+.contenedorForm .form{
+    background: rgba(0,0,0,.7);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    padding-bottom:30px ;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.contenedorForm .form .formTitle{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+}
+.contenedorForm .form .formLabel{
+    display: block; /*se ordenan uno debajo del otro */
+    color: rgb(255, 157, 29);
+    font-size: 16px;
+}
+.contenedorForm .form .formInput, .formTextArea{
+    background: rgba(251, 251, 251, 0.2);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 157, 29);
+    width: 100%;
+    padding:12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;    
+}
+.contenedorForm .form .formTextArea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedorForm .form .btnSubmit{
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background: rgb(255, 157, 29);
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.contenedorForm .form .btnSubmit:hover{
+    background: rgb(0, 228, 152); /*rgb(250, 23, 110)*/
+    transition: all .5s ease;
 }
