@@ -382,13 +382,16 @@ body{
 }
 
 /*--- Página: CONTACTO ---*/
+.secContacto1{
+    background: #ededee;
+    height: 30vh;
+}
 .secContacto{
-    height: 70vh;
+    height: 60vh;
     background: #ededee;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: end;
     background: url(../carrousel/carrousel9.jpg);
     background-size: cover;
     background-position: center;
@@ -425,14 +428,14 @@ body{
 }
 .contenedorForm .form .formLabel{
     display: block; /*se ordenan uno debajo del otro */
-    color: rgb(255, 157, 29);
+    color: rgb(0, 228, 152);
     font-size: 16px;
 }
 .contenedorForm .form .formInput, .formTextArea{
     background: rgba(251, 251, 251, 0.2);
     border: none;
     outline: none;
-    border-bottom: 2px solid rgb(255, 157, 29);
+    border-bottom: 2px solid rgb(0, 228, 152);
     width: 100%;
     padding:12px;
     margin-bottom: 20px;
@@ -450,14 +453,20 @@ body{
     outline: none;
     font-size: 16px;
     border: none;
-    background: rgb(255, 157, 29);
+    background: rgb(0, 228, 152);
     color: #fff;
     padding: 15px 0;
     cursor: pointer;
 }
 .contenedorForm .form .btnSubmit:hover{
-    background: rgb(0, 228, 152); /*rgb(250, 23, 110)*/
+    background:rgb(255, 157, 29) ; /*rgb(250, 23, 110)*//*rgb(255, 157, 29)*/
     transition: all .5s ease;
+}
+.map{
+    filter: grayscale(75%);
+    /*filter: saturate(50%);
+    filter: invert(100%);*/
+
 }
 /*--- Footer ---*/
 .footer-contenedor{
