@@ -33,12 +33,7 @@ body{
 .navbar-brand:hover{
     color: rgb(0, 228, 152);
 }
-.navbar-toggler span{
-    color: white;
-}
-.navbar-toggler-icon{
-    color: #fff;
-}
+
 .nav-link.active{
     color:rgb(0, 243, 211) ;
 }
@@ -101,8 +96,9 @@ body{
 }
 /*------------------------- MODIFICAR -- CARDS INDEX ----------------------------------- */
 .section.section__2{ /*fondo CARDS*/
-    background-color: orange;
+    background-color: turquoise;
     height: 30vh;
+    margin-bottom: 20px;
 }
 .cards{
     display: flex;
