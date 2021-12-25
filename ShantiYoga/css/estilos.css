@@ -90,7 +90,7 @@ body{
 }
 .texto_sec1{
     color: #929090;
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -98,15 +98,24 @@ body{
     font-weight: 300;
 }
 .secBienvenida{
-    height: 60vh;
-    background-color: #fff;
+    height: 120vh;
+    background-color: #EDEDEE; /*#EDEDEE*/
     font-family: poppins;
+}
+@media all and (min-width:992px){
+    .secBienvenida{
+        height: 70vh;
+    }
 }
 .secBienvenida h1{
     color: rgb(255, 157, 29);
     letter-spacing: 0.1rem;
     font-weight: 400;
 
+}
+.secContenido{
+    height: 80vh;
+    background-color: paleturquoise;
 }
 /*------------------------- MODIFICAR -- CARDS INDEX ----------------------------------- */
 .section.section__2{ /*fondo CARDS*/
