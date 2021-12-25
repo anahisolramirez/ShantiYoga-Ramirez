@@ -9,7 +9,6 @@ body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
-
 /*--- Página: INDEX ---*/
 /*Nav Bootstrap*/
 .myNav{
@@ -66,13 +65,14 @@ body{
 }
 /* Background Banner */
 .header_content.background_index{
-    background-image: linear-gradient(to right, #0d7a1855, #00273159), url(../multimedia/background.jpg);
+    background-image: linear-gradient(to right, #0d7a1855, #00273159), url(../multimedia/prueba1.jpg);
     background-position: center;
     background-size: cover;
 }
+/*
 .header_content.background_index.background_index-home{
     background-attachment: fixed;
-}
+}*/
 /*wave*/
 .header_content .wave{
     position: absolute;
@@ -89,10 +89,24 @@ body{
     align-items: center;
 }
 .texto_sec1{
-    color: #2e8d7f;
+    color: #929090;
     width: 70%;
     margin: auto;
     text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.secBienvenida{
+    height: 60vh;
+    background-color: #fff;
+    font-family: poppins;
+}
+.secBienvenida h1{
+    color: rgb(255, 157, 29);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+
 }
 /*------------------------- MODIFICAR -- CARDS INDEX ----------------------------------- */
 .section.section__2{ /*fondo CARDS*/
