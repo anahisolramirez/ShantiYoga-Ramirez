@@ -65,7 +65,7 @@ body{
 }
 /* Background Banner */
 .header_content.background_index{
-    background-image: linear-gradient(to right, #0d7a1855, #00273159), url(../multimedia/prueba1.jpg);
+    background-image: linear-gradient(to right, #0d7a1855, #00273159), url(../multimedia/prueba5.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -82,12 +82,7 @@ body{
 .section{
     height: 50vh;
 }
-.section__1{
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .texto_sec1{
     color: #929090;
     width: 80%;
@@ -98,146 +93,49 @@ body{
     font-weight: 300;
 }
 .secBienvenida{
-    height: 120vh;
+    
     background-color: #EDEDEE; /*#EDEDEE*/
     font-family: poppins;
 }
+/*
 @media all and (min-width:992px){
     .secBienvenida{
         height: 70vh;
     }
-}
+}*/
 .secBienvenida h1{
+    color: #58f6bc;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+
+}
+.secBienvenida h2{
     color: rgb(255, 157, 29);
     letter-spacing: 0.1rem;
     font-weight: 400;
-
+}
+.secBienvenida h3{
+    color: #1beccd;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
 }
 .secContenido{
     height: 80vh;
-    background-color: paleturquoise;
-}
-/*------------------------- MODIFICAR -- CARDS INDEX ----------------------------------- */
-.section.section__2{ /*fondo CARDS*/
-    background-color: turquoise;
-    height: 30vh;
-    margin-bottom: 20px;
-}
-.cards{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.card1, .card2, .card3{
     background-color: #fff;
-    width: 25%;
-    display: inline-block;
-    margin: -5% ;
-    text-align: center;
-    border: 0.1px solid rgba(158, 158, 158, 0.493);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
 }
-.card_title{
-    font-size: 16px;
-}
-.card1 p, .card2 p, .card3 p{
-    margin-bottom: 20px;
-    padding: 5px;   
-    margin: 5px;
-}
-.card_text{
-    font-size: 14px;
-}
-.btn{ /*exclusivo CARDS*/
-    margin-bottom: 20px;
-}
-.btn a{ /*exclusivo CARDS*/
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
-    background-color:#1beccd;
-    border-radius: 5px;
-    padding: 2px 10px;
-}/*------------------------- MODIFICAR -- CARDS INDEX ----------------------------------- */
-
-
-/*------------------------ BORRAR -- Galería Grid ------------------------*/
-.contenedorGrid_galeria{
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-areas: 
-    "img1 img1 img1 contenido1 "
-    "contenido2 img2 img2 img2"
-    "img3 img3 img3 contenido3";
-    height: 90%;
-    grid-gap: 1rem;
-}
-.img1_grid{
-    grid-area: img1;
-    background-color: coral;
-    background-image: url(../multimedia/imgPareja1.jpg);
-    background-position: center;
+.imgBienvenida{
+    height:30vh;
+    background-image: url("../multimedia/prueba444.jpg");
+    background-attachment: fixed;
+    background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.contenido1_grid{
-    grid-area: contenido1;
-    background-color: rgba(118, 255, 255, 0.904);
-    align-self: stretch;
-    justify-self: stretch;
-    background-image: linear-gradient(to right, #0f344348, #1b5e429f);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.anidados{   /* exclusivo GRID*/
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-    width: 100%;
-}
-.tit1{ /* exclusivo GRID*/
-    max-width: 60%;
-    display: flex;
-    color: #fff;
-    margin-bottom: 11px;
-}
-.btn_galeria a{ /* exclusivo GRID*/
-    background: #0725314b;
-}
-.img2_grid{ /* exclusivo GRID*/
-    grid-area: img2;
-    background-color: rgb(80, 220, 255);
-    background-image: url(../multimedia/brazos.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.contenido2_grid{ /* exclusivo GRID*/
-    grid-area: contenido2;
-    background-color: rgba(118, 255, 255, 0.904);
-    background-image: linear-gradient(to right, #1b5e429f, #0f344348)
     
 }
-.img3_grid{ /* exclusivo GRID*/
-    grid-area: img3;
-    background-color: rgb(249, 80, 255);
-    background-image: url(../multimedia/img2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.iconTecnicas{
+    width: 30%;
 }
-.contenido3_grid{ /* exclusivo GRID*/
-    grid-area: contenido3;
-    background-color: rgba(118, 255, 255, 0.904);
-    background-image: linear-gradient(to right, #0f344348, #1b5e429f);
-}
-/*------------------------ BORRAR -- Galería Grid ------------------------*/
+
 /*--- Página: About ---*/
 /* Background banner */
 .header_content.background_index.background_index-about{
@@ -480,7 +378,6 @@ body{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-top: 10px;
     align-items: center;
 }
 .seguinos{
