@@ -367,13 +367,13 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.textContact{
-    color: #2e8d7f;
-    font-size: 2.5 rem;
-    font-weight: 100;
+.textContact h4{
+    color: #23caaf;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 .textContact span{
-    font-size: 2 rem;
+    font-size: 1.5rem;
 }
 .seguinos{
     color: #fff;
