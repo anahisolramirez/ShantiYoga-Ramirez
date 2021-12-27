@@ -69,10 +69,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-/*
-.header_content.background_index.background_index-home{
-    background-attachment: fixed;
-}*/
+
 /*wave*/
 .header_content .wave{
     position: absolute;
@@ -94,15 +91,9 @@ body{
 }
 .secBienvenida{
     
-    background-color: #EDEDEE; /*#EDEDEE*/
+    background-color: #EDEDEE;
     font-family: poppins;
 }
-/*
-@media all and (min-width:992px){
-    .secBienvenida{
-        height: 70vh;
-    }
-}*/
 .secBienvenida h1{
     color: #58f6bc;
     letter-spacing: 0.1rem;
@@ -160,13 +151,6 @@ body{
     width: 50%;
     background-color: #daa403b9;
     padding: auto 0;
-}
-.img_about1{
-    width: 50%;
-    background-color: sandybrown;
-    background: url(../multimedia/img_aboutRec.jpg);
-    background-size: cover;
-    background-position: center;
 }
 .texto_sec1.p_about{
     color: #fff;
@@ -458,9 +442,6 @@ body{
     background-size: cover;
     background-position: center;
     }
-   .contenedor_about{
-        flex-flow: column wrap;
-   }
    .text_about{
         width: 100%;
         background-color: rgba(27, 15, 3, 0.192);
@@ -479,19 +460,9 @@ body{
         align-items: center;
         justify-content: center;
     }
-    .contenedor_about{
-        width: 110%;
-        flex-flow: row wrap;
-    }
     .text_about{
         width: 70%;
         margin: auto;
-    }
-    .img_about1{
-        flex-direction: row;
-        width: 70%;
-        margin: auto;
-        height: 50vh;
     }
     .text_about .texto_sec1.p_about{
         font-size: 0.9rem;
@@ -589,6 +560,7 @@ body{
     height: 31vh;
     box-sizing: border-box;
 }
+/*
 .section_Clases::before{
     content: ' " El yoga es un camino hacia la libertad "';
     z-index: 10;
@@ -596,6 +568,7 @@ body{
     font-size: 1.1rem;
     padding-top: 1.5em;
 }
+*/
 .section_Contacto{
     height: 30vh;
     box-sizing: border-box;
