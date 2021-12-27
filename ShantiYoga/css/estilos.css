@@ -245,6 +245,14 @@ body{
         font-size: 1.2rem;
     }
 }
+.imgClasesBg{
+    height:30vh;
+    background-image: url("../multimedia/prueba9.jpg");
+    background-attachment: fixed;
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .iconClases{
     max-width: 7rem;
     margin-top: -75px;
