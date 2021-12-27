@@ -22,11 +22,13 @@ body{
     color: #fff;
     font-size: 1.3rem;
 }
+.navbar .nav-link {
+    color: #fff !important;
+}
 .navbar-nav li a:hover{
-    color: rgb(0, 228, 152);
+    color: rgb(0, 228, 152) !important;
 }
 .navbar-brand{
-    color: #fff;
     font-size: 2rem;
 }
 .navbar-brand:hover{
@@ -34,7 +36,7 @@ body{
 }
 
 .nav-link.active{
-    color:rgb(0, 243, 211) ;
+    color:rgb(0, 243, 211)!important;
 }
 /* header index */
 .header_content{
@@ -171,7 +173,7 @@ body{
     object-fit: cover; /*pantalla completa*/
 }
 .bg-video{
-    filter: opacity(75%) drop-shadow(0px 0px 1px rgba(0,0,0,.7));
+    filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0,0,0,.7));
 }
 /* clasesYoutube */
 .clasesYoutube{
