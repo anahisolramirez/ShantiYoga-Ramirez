@@ -1,0 +1,11 @@
+/*Mixin*/
+@mixin fontAndColor($fontSize: 1rem ,$colorBlanco: #fff){
+    color: $colorBlanco;
+    font-size: $fontSize;
+}
+/*Mixin para Background Image de Header*/
+@mixin fondosImagen($imagen){
+    background-image: linear-gradient(to right, #30fb4428, #003f503a), url($imagen);
+    background-position: center;
+    background-size: cover;
+}

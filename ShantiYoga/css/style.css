@@ -1,0 +1,624 @@
+@charset "UTF-8";
+/*Mixin*/
+/*Mixin para Background Image de Header*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+.font-weight-thin {
+  font-weight: 100;
+}
+
+.font-weight-extraLight {
+  font-weight: 200;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-extraBold {
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*--- Página: INDEX ---*/
+/*Nav Bootstrap*/
+.myNav {
+  background: rgba(5, 32, 13, 0.568);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.myNav .navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.navbar-nav li a:hover {
+  color: #00e498 !important;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link.active {
+  color: #00f3d3 !important;
+}
+
+/* header index */
+.header_content {
+  height: 60vh;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header_content .wave {
+  position: absolute;
+  width: 100%;
+  bottom: -3%;
+}
+
+/* Background Banner */
+.header_content.background_index {
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url("../multimedia/prueba5.jpg");
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../multimedia/prueba5.jpg");
+  background-position: center;
+  background-size: cover;
+  /*usando MIXIN*/
+}
+
+.secBienvenida {
+  background-color: #EDEDEE;
+  font-family: poppins;
+}
+
+.secBienvenida .texto_sec1 {
+  color: #929090;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.secBienvenida h1 {
+  color: #58f6bc;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
+
+.secBienvenida h2 {
+  color: #ff9d1d;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.secBienvenida h3 {
+  color: #1beccd;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.secBienvenida .iconTecnicas {
+  width: 30%;
+}
+
+.imgBienvenida {
+  height: 30vh;
+  background-image: url("../multimedia/prueba444.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*--- Página: About ---*/
+/* Background banner */
+.header_content.background_index.background_index-about {
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url("../multimedia/prueba7.jpg");
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../multimedia/prueba7.jpg");
+  background-position: center;
+  background-size: cover;
+  /*usando MIXIN*/
+}
+
+.secAbout .texto_sec1 {
+  color: #929090;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.texto_sec1.p_about {
+  color: #fff;
+  font-size: 1rem;
+  /*usando MIXIN*/
+  font-weight: 300;
+  /*GET MAP*/
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding: 15px 5px;
+}
+
+/*--- Página: CLASES ---*/
+/* Video background */
+.bg-video {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background: black;
+  background-position: center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*pantalla completa*/
+  -webkit-filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.7));
+          filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.7));
+}
+
+.contentClases {
+  width: 90%;
+  background: #fff;
+  color: #B7B7B7;
+  letter-spacing: 1.1px;
+  line-height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 300;
+  /*GET MAP*/
+  border-radius: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  .contentClases {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .contentClases {
+    font-size: 1.2rem;
+  }
+}
+
+.contentClases .iconClases {
+  max-width: 7rem;
+  margin-top: -75px;
+}
+
+.contentClases .titClases1 {
+  font-size: 1.4rem;
+  color: #58F6BC;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+@media all and (min-width: 768px) {
+  .contentClases .titClases1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .contentClases .titClases1 {
+    font-size: 2rem;
+  }
+}
+
+.contentClases .titClases1:hover {
+  color: #ff9d1d;
+  font-weight: 400;
+  /*GET MAP*/
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0 0.1em rgba(255, 255, 255, 0.562);
+          box-shadow: 0 0.1em rgba(255, 255, 255, 0.562);
+}
+
+.contentClases .btnClases {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  /*GET MAP*/
+  background-color: #58f6bca2;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.contentClases .btnClases:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #58F6BC;
+  font-weight: 500;
+  /*GET MAP*/
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.contentTiposClases {
+  background: #ededee;
+  width: 100%;
+}
+
+.imgClasesBg {
+  height: 30vh;
+  background-image: url("../multimedia/prueba9.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hataYoga, .pilates {
+  background: #38645aa6;
+  color: #ffff;
+}
+
+.ashtangaYoga {
+  background: #fff;
+  margin-top: 1.5rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.ashtangaYoga:hover {
+  background: #58f6bca2;
+  color: #fff;
+}
+
+.reiki {
+  background: #fff;
+  margin-top: 1.5rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.reiki:hover {
+  background: #58f6bca2;
+  color: #fff;
+}
+
+@media all and (min-width: 992px) {
+  .lgEstilos {
+    background: #ffff;
+    color: #B7B7B7;
+  }
+  .lgEstilos:hover {
+    background: #58f6bca2;
+    color: #fff;
+  }
+}
+
+/* clasesYoutube */
+.clasesYoutube {
+  text-align: center;
+  padding: 20px;
+}
+
+.clasesYoutube p {
+  padding: 10px;
+  color: #2e8d7f;
+  font-weight: 500;
+  /*GET MAP*/
+}
+
+/*--- Página: CONTACTO ---*/
+.bgContacto {
+  background: #ededee;
+}
+
+.secContacto {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  /*background: url(../carrousel/carrousel9.jpg);*/
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Formulario*/
+.contenedorForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contenedorForm .form {
+  background: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.contenedorForm .form .formTitle {
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.contenedorForm .form .formLabel {
+  display: block;
+  /*se ordenan uno debajo del otro */
+  color: #00e498;
+  font-size: 16px;
+}
+
+.contenedorForm .form .formInput, .contenedorForm .form .formTextArea {
+  background: rgba(251, 251, 251, 0.2);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00e498;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contenedorForm .form .formTextArea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.contenedorForm .form .btnSubmit {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  background: #00e498;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.contenedorForm .form .btnSubmit:hover {
+  background: #ff9d1d;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.map {
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+}
+
+/*--- Footer ---*/
+.footer-contenedor {
+  /* margin: auto;*/
+  height: 10vh;
+  width: 100%;
+  background-color: #1beccd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-contenedor .seguinos {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.footer-contenedor .menu_footer {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 5px;
+  line-height: 30px;
+}
+
+.footer-contenedor .menu_footer:hover {
+  color: #01c77b;
+}
+
+.textContact h4 {
+  color: #23caaf;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.textContactspan {
+  font-size: 1.5rem;
+}
+
+.nav-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.nav-footer li {
+  list-style: none;
+}
+
+/* Responsive Media queries */
+/*A partir de 768px en adelante*/
+@media all and (max-width: 768px) {
+  .header_content {
+    height: 50vh;
+  }
+}
+
+/* Animaciones */
+/* Primera Animación Cambio de escala en Galería Grid */
+.section3_grid .contenedorGrid_galeria .uno, .dos, .tres {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*Tercera animación Menu Hover*/
+.menu_navigation:hover {
+  cursor: pointer;
+  color: #01c77b;
+  border-bottom: solid 2px #01c77b;
+  width: 30%;
+  font-weight: 300;
+}
+
+/* wow animación*/
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 1s;
+}
+
+/*--- Página: Tienda ---*/
+/* header tienda */
+.header_content.background_index.background_index-tienda {
+  height: 50vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/bk_tienda2.jpeg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/bk_tienda2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*Carrousel*/
+.carousel.slide {
+  overflow: hidden;
+  background: #00e498;
+  max-height: 900px;
+}
+
+.paragraph {
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: #2e8d7f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.paragraph2 {
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+/* Cards con ProdUctos de Tienda */
+.card-body p {
+  color: #2e8d7f;
+}
+
+.card-transform {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card-transform:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*Clases Bootstrap*/
+.bg-videoClases {
+  z-index: 1;
+  height: 30vh;
+}
+
+.navbarClases {
+  z-index: 2;
+}
+
+.section_Clases {
+  height: 31vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section_Contacto {
+  height: 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */
