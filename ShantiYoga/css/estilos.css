@@ -141,8 +141,9 @@ body{
 .header_content.background_index.background_index-about{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/deEspalda.jpg);
-    background-attachment: fixed;
+    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba7.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .section.section_about{
     width: 100%;
@@ -244,6 +245,14 @@ body{
     .contentClases{
         font-size: 1.2rem;
     }
+}
+.imgClasesBg{
+    height:30vh;
+    background-image: url("../multimedia/prueba9.jpg");
+    background-attachment: fixed;
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .iconClases{
     max-width: 7rem;
