@@ -79,7 +79,6 @@ body{
 .section{
     height: 50vh;
 }
-
 .texto_sec1{
     color: #929090;
     width: 80%;
@@ -90,7 +89,6 @@ body{
     font-weight: 300;
 }
 .secBienvenida{
-    
     background-color: #EDEDEE;
     font-family: poppins;
 }
@@ -98,7 +96,6 @@ body{
     color: #58f6bc;
     letter-spacing: 0.1rem;
     font-weight: 800;
-
 }
 .secBienvenida h2{
     color: rgb(255, 157, 29);
@@ -121,12 +118,10 @@ body{
     background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 .iconTecnicas{
     width: 30%;
 }
-
 /*--- Página: About ---*/
 /* Background banner */
 .header_content.background_index.background_index-about{
@@ -160,7 +155,6 @@ body{
     letter-spacing: 1px;
     padding: 15px 5px;
 }
-
 /*--- Página: CLASES ---*/
 /* Video background */
 .bg-video{
@@ -273,25 +267,25 @@ body{
     background: #58f6bca2;
     color: #fff;
 }
-
-
 /*--- Página: CONTACTO ---*/
 .secContacto1{
     background: #ededee;
     height: 30vh;
 }
+.bgContacto{
+    background: #ededee;
+}
 .secContacto{
     height: 60vh;
-    background: #ededee;
     display: flex;
     justify-content: center;
     align-items: end;
-    background: url(../carrousel/carrousel9.jpg);
+    /*background: url(../carrousel/carrousel9.jpg);*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
 }
+
 /* Formulario*/
 .contenedorForm {
     display: flex;
@@ -302,7 +296,6 @@ body{
     width: 100%;
     margin-bottom: 20px;
 }
-
 .contenedorForm .form{
     background: rgba(0,0,0,.7);
     width: 90%;
@@ -360,7 +353,6 @@ body{
     filter: grayscale(75%);
     /*filter: saturate(50%);
     filter: invert(100%);*/
-
 }
 /*--- Footer ---*/
 .footer-contenedor{
@@ -372,6 +364,14 @@ body{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+}
+.textContact{
+    color: #2e8d7f;
+    font-size: 2.5 rem;
+    font-weight: 100;
+}
+.textContact span{
+    font-size: 2 rem;
 }
 .seguinos{
     color: #fff;
@@ -394,12 +394,10 @@ body{
 }
 .menu_footer:hover{
     color: rgb(1, 199, 123);
-
 }
 /* Responsive Media queries */
 /*A partir de 768px en adelante*/
 @media all and (max-width:768px){
-    
     .header{
         height: 250px;
         background-color:#05292283 ;
@@ -450,8 +448,6 @@ body{
        font-size: 0.8rem;
    }
 }
-/*Desde 768px hasta 986px*/
-
 @media all and (min-width:768px) and (max-width:986px){
     .section.section_about{
         height: 110vh;
@@ -488,7 +484,6 @@ body{
 .animate__animated.animate__slideInLeft {
     --animate-duration: 1s;
 }
-
 /*Bootstrap*/
 /*Items Nav*/
 .navbar-light .navbar-nav .nav-link.active {
@@ -546,13 +541,11 @@ body{
 .card-transform:hover{
     transform: scale(1.05);
 }
-
 /*Clases Bootstrap*/
 .bg-videoClases{
     z-index: 1;
     height: 30vh;
 }
-
 .navbarClases{
     z-index: 2;
 }

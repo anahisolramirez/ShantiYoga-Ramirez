@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShantiYoga</title>
+    <meta name="description" content="Envianos tu consulta">
+    <meta name="keywords" content="CONTACTO, CONSULTA, INFORMACION">
+    <title>Contactanos y Seguinos!</title>
     <!-- Bootstrap CSS --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
-    <div class="container-fluid m-0 p-0"> <!-- Header: Nav + videos background + Frase  -->
-
+    <div class="container-fluid m-0 p-0"> 
         <!-- Nav Bootstrap -->
         <nav class="d-flex navbar navbar-expand-md navbar-dark p-2 myNav">
             <div class="container-fluid">
                 <video class="bg-video bg-videoClases" onloadedmetadata="this.muted=true" autoplay loop> <!-- Video Background -->
                     <source src="multimedia/contacto6_production ID_4065723.mp4">
                 </video>
-
                 <a class="navbar-brand col-4 navbarClases" href="index.html"><p>ShantiYoga</p></a> <!-- Logo -->
-                
                 <button class="navbar-toggler navbarClases" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
                 <div class="collapse navbar-collapse col-8 justify-content-around p-2 navbarClases" id="navbarNav"> <!-- Menu Navegable -->
                     <ul class="navbar-nav">
                         <li class="nav-item p-2">
@@ -45,54 +42,44 @@
                     </ul>
                 </div>
             </div>
-        </nav> <!-- Fin Nav Bootstrap -->
+        </nav> 
     </div>
-    
     <div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0 section_Contacto">
         <span></span>
     </div>
-    
-    <div class="container-fluid secContacto1">
-
-    </div>
-
-    <div class="container-fluid m-0 p-0 secContacto">
-        <!-- Formulario -->
-        <!-- <p>Envianos tu consulta</p>
-        <p><span>nos pondremos en contacto con vos</span></p>-->
-        <div class="contenedorForm" >
-            <form action="" class="form">
-                <div class="formHeader">
-                    <h1 class="formTitle" >Contacto</h1>
-                </div>
-
-                <label class="formLabel" for="nombre">Nombres:</label>
-                <input class="formInput" id="nombre" type="text" placeholder="Escriba su nombre" >
-            
-                <label class="formLabel" for="direccion">Dirección</label>
-                <input class="formInput" id="direccion" type="text" placeholder="Escriba su dirección" >
-
-                <label class="formLabel" for="correo">Correo Electrónico</label>
-                <input class="formInput" id="correo" type="email" placeholder="Escriba su correo" >
-
-                <label class="formLabel" for="mensaje">Mensaje</label>
-                <textarea id="mensaje" class="formTextArea" placeholder="Aquí escriba su mensaje" ></textarea>
-        
-                <input type="submit" class="btnSubmit" value="Enviar Consulta">
-            </form>
+    <section class="container-fluid m-0 p-0 bgContacto">
+        <div class="container text-center pt-5   textContact">
+            <h3>Envianos tu consulta</h3>
+            <h4><span> Nos pondremos en contacto con vos</span></h4>
         </div>
-    </div>
+        <!-- Formulario -->
+        <div class="secContacto">
+            <div class="contenedorForm" >
+                <form action="" class="form">
+                    <div class="formHeader">
+                        <h1 class="formTitle" >Contacto</h1>
+                    </div>
+                    <label class="formLabel" for="nombre">Nombres:</label>
+                    <input class="formInput" id="nombre" type="text" placeholder="Escriba su nombre" >
+                    <label class="formLabel" for="direccion">Dirección</label>
+                    <input class="formInput" id="direccion" type="text" placeholder="Escriba su dirección" >
+                    <label class="formLabel" for="correo">Correo Electrónico</label>
+                    <input class="formInput" id="correo" type="email" placeholder="Escriba su correo" >
+                    <label class="formLabel" for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" class="formTextArea" placeholder="Aquí escriba su mensaje" ></textarea>
+                    <input type="submit" class="btnSubmit" value="Enviar Consulta">
+                </form>
+            </div>
+        </div>
+        
+    </section>
     
-    <div class="container-fluid secContacto1">
-
-    </div>
-    <!-- Agregando Mapa -->
+    <!-- Mapa -->
     <div class="container-fluid m-0 p-0">   
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5520.447907248265!2d-58.50986063043084!3d-34.64263029314408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9dc84ba6bf1%3A0x6fa33ace67eba9f4!2sPlaza%20Larrazabal!5e0!3m2!1ses-419!2sar!4v1640023645761!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
     <!-- Footer -->
-    <div class="footer-contenedor"> 
+    <footer class="footer-contenedor"> 
         <div class="seguinos">
             <p>Seguinos en nuestras Redes</p>
         </div>
@@ -103,7 +90,7 @@
                 <li><a class="menu_footer" href="https://www.youtube.com/" target="_blank">YouTube</a></li>
             </ul>
         </div>
-    </div>
+    </footer>
     <!-- JS Bootstrap --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
