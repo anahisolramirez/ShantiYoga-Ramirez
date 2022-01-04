@@ -148,6 +148,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.beneficios span {
+  color: #58f6bca2;
+  font-size: 1.7rem;
+  padding-right: 5px;
+}
+
 /*--- Página: About ---*/
 /* Background banner */
 .header_content.background_index.background_index-about {

@@ -93,7 +93,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.beneficios{
+    span{
+        color: $colorAqua;
+        font-size: 1.7rem;
+        padding-right: 5px;
+    }
+}
 /*--- Página: About ---*/
 /* Background banner */
 .header_content.background_index.background_index-about{
