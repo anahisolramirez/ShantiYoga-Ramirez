@@ -332,6 +332,17 @@ body{
         }
     }
 }
+.sectionForm{
+    background: #ededee;
+    background-image: url(../carrousel/carrousel0.jpg);
+    
+}
+.contentForm{
+    width: 90%;
+    background: $colorVerde;
+    z-index: 1;
+}
+
 .map{
     filter: grayscale(75%);
 }

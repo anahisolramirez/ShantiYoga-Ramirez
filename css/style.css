@@ -458,6 +458,17 @@ body {
   transition: all .5s ease;
 }
 
+.sectionForm {
+  background: #ededee;
+  background-image: url(../carrousel/carrousel0.jpg);
+}
+
+.contentForm {
+  width: 90%;
+  background: #00e498;
+  z-index: 1;
+}
+
 .map {
   -webkit-filter: grayscale(75%);
           filter: grayscale(75%);
