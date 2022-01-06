@@ -11,6 +11,7 @@
 body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    background-color: #ededee;
 }
 /*--- Página: INDEX ---*/
 /*Nav Bootstrap*/
@@ -54,6 +55,7 @@ body{
 .header_content.background_index{
     @include fondosImagen ('../multimedia/prueba5.jpg'); /*usando MIXIN*/
 }
+
 .secBienvenida{
     background-color: #EDEDEE;
     font-family: poppins;
@@ -85,6 +87,10 @@ body{
         width: 30%;
     }
 }
+.bgWhite{
+    background-color: #fff;
+    margin-top: -40px;
+}
 .imgBienvenida{
     height:30vh;
     background-image: url("../multimedia/prueba444.jpg");
@@ -92,6 +98,22 @@ body{
     background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.galeriaInicio{
+    background-image: url(../multimedia/bgHojasWhite3.svg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    width: 80%;
+    .carousel{
+        width: 80%;
+        margin: auto;
+        img{
+            border-radius: 2rem;
+            background-color: transparent;
+        }
+    }    
 }
 .beneficios{
     span{
@@ -385,7 +407,6 @@ body{
 /*Carrousel*/
 .carousel.slide{
     overflow: hidden;
-    background: rgb(0, 228, 152);
     max-height: 900px;
 }
 .paragraph{
