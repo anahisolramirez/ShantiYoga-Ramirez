@@ -95,7 +95,7 @@ body{
 }
 .beneficios{
     span{
-        color: $colorAqua;
+        color: $colorTurquesa;
         font-size: 1.7rem;
         padding-right: 5px;
     }
@@ -255,93 +255,45 @@ body{
 }
 /*--- Página: CONTACTO ---*/
 
-.bgContacto{
-    background: #ededee;
-}
-.secContacto{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    /*background: url(../carrousel/carrousel9.jpg);*/
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* Formulario*/
-.contenedorForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    padding-top: 30px;
-    width: 100%;
-    margin-bottom: 20px;
-    .form{
-        background: rgba(0,0,0,.7);
-        width: 90%;
-        max-width: 650px;
-        margin: auto;
-        padding: 5px 35px;
-        padding-bottom:30px ;
-        border-radius: 3px;
-        margin-bottom: 20px;
-        .formTitle{
-            font-weight: normal;
-            font-family: sans-serif;
-            color: #fff;
-            text-align: center;
-            padding: 14px 0;
-        }
-        .formLabel{
-            display: block; /*se ordenan uno debajo del otro */
-            color: rgb(0, 228, 152);
-            font-size: 16px;
-        }
-        .formInput, .formTextArea{
-            background: rgba(251, 251, 251, 0.2);
-            border: none;
-            outline: none;
-            border-bottom: 2px solid rgb(0, 228, 152);
-            width: 100%;
-            padding:12px;
-            margin-bottom: 20px;
-            border-radius: 2px;
-            font-size: 14px;
-            color: #fff;
-        }
-        .formTextArea{
-            resize: vertical;
-            max-height: 150px;
-            min-height: 50px;
-        }
-        .btnSubmit{
-            width: 100%;
-            outline: none;
-            font-size: 16px;
-            border: none;
-            background: rgb(0, 228, 152);
-            color: #fff;
-            padding: 15px 0;
-            cursor: pointer;
-            &:hover{
-                background:rgb(255, 157, 29); 
-                transition: all .5s ease;
-            }
-        }
-    }
-}
 .sectionForm{
     background: #ededee;
-    background-image: url(../carrousel/carrousel0.jpg);
     
 }
+/* Formulario */
 .contentForm{
-    width: 90%;
-    background: $colorVerde;
-    z-index: 1;
-}
+    width: 70%;
+        form{
+            background: rgba(0,0,0,.7);
+            .formLabel{
+                color: rgb(0, 228, 152);
+                font-weight: 400;
+                letter-spacing: 1px;
+                
+            }
+            .formInput{
+                background: rgba(238, 238, 238, 0.795);
+                border: none;
+                outline: none;
+                border-bottom: 3px solid rgb(0, 228, 152);
+                padding:12px;
+                border-radius: 2px;
+                font-size: 14px;
+                color: #fff;
+            }
+            .btnSubmit{
+                width: 100%;
+                font-size: 16px;
+                border: none;
+                background: rgb(0, 228, 152);
+                color: #fff;
+                padding: 15px 0;
+                &:hover{
+                    background:rgb(255, 157, 29); 
+                    transition: all .5s ease;
+                }
+            }    
+        }
+    }
 
 .map{
     filter: grayscale(75%);

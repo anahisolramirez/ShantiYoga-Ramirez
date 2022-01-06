@@ -149,7 +149,7 @@ body {
 }
 
 .beneficios span {
-  color: #58f6bca2;
+  color: #58F6BC;
   font-size: 1.7rem;
   padding-right: 5px;
 }
@@ -460,13 +460,46 @@ body {
 
 .sectionForm {
   background: #ededee;
-  background-image: url(../carrousel/carrousel0.jpg);
 }
 
 .contentForm {
-  width: 90%;
+  width: 80%;
+}
+
+.contentForm form {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.contentForm form .formLabel {
+  color: #00e498;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.contentForm form .formInput {
+  background: rgba(238, 238, 238, 0.795);
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #00e498;
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contentForm form .btnSubmit {
+  width: 100%;
+  font-size: 16px;
+  border: none;
   background: #00e498;
-  z-index: 1;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.contentForm form .btnSubmit:hover {
+  background: #ff9d1d;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .map {

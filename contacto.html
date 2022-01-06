@@ -44,34 +44,13 @@
             </div>
         </nav> 
     </div>
+    
     <div class="container-fluid d-flex justify-content-center align-items-center m-0 p-0 section_Contacto">
         <span></span>
     </div>
-    <section class="container-fluid m-0 p-0 bgContacto">
-        <div class="container text-center pt-5 textContact">
-            <h4>Envianos tu consulta</h4>
-            <h4><span> Nos pondremos en contacto con vos</span></h4>
-        </div>
-        <!-- Formulario -->
-        <div class="secContacto">
-            <div class="contenedorForm" >
-                <form action="" class="form">
-                    <div class="formHeader">
-                        <h1 class="formTitle" >Contacto</h1>
-                    </div>
-                    <label class="formLabel" for="nombre">Nombres:</label>
-                    <input class="formInput" id="nombre" type="text" placeholder="Escriba su nombre" >
-                    <label class="formLabel" for="direccion">Dirección</label>
-                    <input class="formInput" id="direccion" type="text" placeholder="Escriba su dirección" >
-                    <label class="formLabel" for="correo">Correo Electrónico</label>
-                    <input class="formInput" id="correo" type="email" placeholder="Escriba su correo" >
-                    <label class="formLabel" for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" class="formTextArea" placeholder="Aquí escriba su mensaje" ></textarea>
-                    <input type="submit" class="btnSubmit" value="Enviar Consulta">
-                </form>
-            </div>
-        </div>
-    </section>
+    
+    
+    <!-- Formulario -->
     <section class="container-fluid sectionForm py-5">
         <div class="container text-center pt-5 textContact">
             <h4>Envianos tu consulta</h4>
@@ -79,47 +58,52 @@
         </div>
         <section class="container margin-auto my-4 contentForm">
             <form class="row g-3">
+                <div class="col-12">
+                    <label for="nombre" class="form-label formLabel">Nombre</label>
+                    <input type="text" class="form-control formInput" id="nombre" placeholder="Tu nombre">
+                </div>
+                
+                <div class="col-12">
+                    <label for="inputEmail4" class="form-label formLabel">E-mail</label>
+                    <input type="email" class="form-control formInput" id="inputEmail4" placeholder="Tu correo electrónico">
+                </div>
+                <div class="col-12">
+                    <label for="telefono" class="form-label formLabel">Teléfono</label>
+                    <input type="text" class="form-control formInput" id="telefono" placeholder="Tu teléfono">
+                </div>
+               
                 <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                    <label for="inputState" class="form-label formLabel">Info acerca de...</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Yoga</option>
+                        <option>Pilates</option>
+                        <option>Sesiones Reiki</option>
+                        <option>Tienda Yogui</option>
+                        <option>Me interesa todo</option>
+                    </select>
                 </div>
                 <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputState" class="form-label formLabel">Como nos conociste</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Recomendación</option>
+                    </select>
                 </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label formLabel">Mensaje</label>
+                    <textarea class="form-control formInput" id="mensaje" rows="3" placeholder="Escribe aquí"></textarea>
+                  </div>
                 <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label formLabel" for="gridCheck">
+                        Quiero recibir información acerca de las Novedades del Centro
+                        </label>
+                    </div>
                 </div>
-                <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>
-                </div>
-                <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                    Check me out
-                    </label>
-                </div>
-                </div>
-                <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <div class="col-12 mb-3">
+                    <button type="submit" class="btn btn-primary btnSubmit">Enviar</button>
                 </div>
             </form>
         </section>
