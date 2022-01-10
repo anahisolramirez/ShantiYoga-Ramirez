@@ -409,6 +409,27 @@ body{
     overflow: hidden;
     max-height: 900px;
 }
+.mycard{
+    background-color: #EDEDEE;
+    border: none;
+    width: 23rem;
+    .myimg{
+        border-top-left-radius: calc(3.25rem - 1px);
+        margin: 0;
+        padding: 0;
+        --bs-gutter-x:0;
+    }
+    .myBtn{
+        background-color: $colorVerde;
+        border: transparent;
+        border-radius: 0.75rem;
+        padding: 0.5rem 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        
+        
+    }
+}
 .paragraph{
     padding-top: 1rem;
     font-size: 1rem;
@@ -423,7 +444,8 @@ body{
 /* Cards con ProdUctos de Tienda */
 .card-body{
     p{
-        color:#2e8d7f;
+        color: #2e8d7f;
+
     }
 }
 .card-transform{
@@ -431,7 +453,9 @@ body{
     &:hover{
         transform: scale(1.05);
     }
+    
 }
+
 /*Clases Bootstrap*/
 .bg-videoClases{
     z-index: 1;
