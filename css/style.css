@@ -545,6 +545,28 @@ body {
   max-height: 900px;
 }
 
+.mycard {
+  background-color: #EDEDEE;
+  border: none;
+  width: 23rem;
+}
+
+.mycard .myimg {
+  border-top-left-radius: calc(3.25rem - 1px);
+  margin: 0;
+  padding: 0;
+  --bs-gutter-x:0;
+}
+
+.mycard .myBtn {
+  background-color: #00e498;
+  border: transparent;
+  border-radius: 0.75rem;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .paragraph {
   padding-top: 1rem;
   font-size: 1rem;
