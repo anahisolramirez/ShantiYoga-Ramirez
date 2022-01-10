@@ -567,6 +567,10 @@ body {
   font-size: 1rem;
 }
 
+.mycard .mymodalEstilos {
+  background-color: #70b69e;
+}
+
 .paragraph {
   padding-top: 1rem;
   font-size: 1rem;
