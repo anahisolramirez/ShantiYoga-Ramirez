@@ -404,16 +404,20 @@ body{
     background-attachment: fixed;
     position: relative;
 }
-/*Carrousel*/
+/*Carrousel
 .mycarousel{
-    max-height: 70vh;
+    /*max-height:810px;
+    object-fit: cover;
     img{
-        max-height: 1300px;
-        object-fit: contain;
+        mask-image: linear-gradient(to right, #fb30f1d3, #003f50d7);
+.header_content.background_index.background_index-tienda    }
+    @media all and (min-width: 1200px){
+        max-height: 1000px;
     }
-}
+}*/
 .carousel.slide{
     overflow: hidden;
+    
 }
 .mycard{
     background-color: #EDEDEE;
@@ -421,9 +425,10 @@ body{
     width: 23rem;
     .myimg{
         border-top-left-radius: calc(3.25rem - 1px);
+        object-fit: contain;
         margin: 0;
         padding: 0;
-        --bs-gutter-x:0;
+        --bs-gutter-x: 0;
     }
     .myBtn{
         background-color: $colorVerde;

@@ -539,17 +539,17 @@ body {
   position: relative;
 }
 
-/*Carrousel*/
-.mycarousel {
-  max-height: 70vh;
-}
-
-.mycarousel img {
-  max-height: 1300px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
+/*Carrousel
+.mycarousel{
+    /*max-height:810px;
+    object-fit: cover;
+    img{
+        mask-image: linear-gradient(to right, #fb30f1d3, #003f50d7);
+.header_content.background_index.background_index-tienda    }
+    @media all and (min-width: 1200px){
+        max-height: 1000px;
+    }
+}*/
 .carousel.slide {
   overflow: hidden;
 }
@@ -562,9 +562,11 @@ body {
 
 .mycard .myimg {
   border-top-left-radius: calc(3.25rem - 1px);
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0;
   padding: 0;
-  --bs-gutter-x:0;
+  --bs-gutter-x: 0;
 }
 
 .mycard .myBtn {
