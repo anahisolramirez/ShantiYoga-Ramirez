@@ -405,9 +405,15 @@ body{
     position: relative;
 }
 /*Carrousel*/
+.mycarousel{
+    max-height: 70vh;
+    img{
+        max-height: 1300px;
+        object-fit: contain;
+    }
+}
 .carousel.slide{
     overflow: hidden;
-    max-height: 900px;
 }
 .mycard{
     background-color: #EDEDEE;

@@ -540,9 +540,18 @@ body {
 }
 
 /*Carrousel*/
+.mycarousel {
+  max-height: 70vh;
+}
+
+.mycarousel img {
+  max-height: 1300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .carousel.slide {
   overflow: hidden;
-  max-height: 900px;
 }
 
 .mycard {
