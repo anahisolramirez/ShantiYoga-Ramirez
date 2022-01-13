@@ -306,24 +306,28 @@ body{
 }
 /* Formulario */
 .contentForm{
-    width: 70%;
+        .myForm{
+            min-width: 400px;
+            max-width: 600px;
+        }
         form{
             background: rgba(0,0,0,.7);
-            .formLabel{
-                color: rgb(0, 228, 152);
-                font-weight: 400;
-                letter-spacing: 1px;
-                
-            }
+                .formLabel{
+                    color: rgb(0, 228, 152);
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    
+                }
             .formInput{
-                background: rgba(238, 238, 238, 0.795);
+                background: #fff;
                 border: none;
                 outline: none;
                 border-bottom: 3px solid rgb(0, 228, 152);
                 padding:12px;
                 border-radius: 2px;
                 font-size: 14px;
-                color: #fff;
+                color: $colorNaranja;
+                font-size: 1rem;
             }
             .btnSubmit{
                 width: 100%;

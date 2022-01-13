@@ -409,8 +409,9 @@ body {
 }
 
 /* Formulario */
-.contentForm {
-  width: 70%;
+.contentForm .myForm {
+  min-width: 400px;
+  max-width: 600px;
 }
 
 .contentForm form {
@@ -424,14 +425,15 @@ body {
 }
 
 .contentForm form .formInput {
-  background: rgba(238, 238, 238, 0.795);
+  background: #fff;
   border: none;
   outline: none;
   border-bottom: 3px solid #00e498;
   padding: 12px;
   border-radius: 2px;
   font-size: 14px;
-  color: #fff;
+  color: #ff9d1d;
+  font-size: 1rem;
 }
 
 .contentForm form .btnSubmit {
