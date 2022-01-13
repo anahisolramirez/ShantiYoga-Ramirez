@@ -182,12 +182,13 @@ body {
 /*--- Página: About ---*/
 /* Background banner */
 .header_content.background_index.background_index-about {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url("../multimedia/prueba7.jpg");
-  background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../multimedia/prueba7.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba7.jpg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba7.jpg);
   background-position: center;
   background-size: cover;
+  /* @include fondosImagen ('../multimedia/prueba7.jpg'); */
   /*usando MIXIN*/
 }
 
@@ -210,6 +211,16 @@ body {
   line-height: 25px;
   letter-spacing: 1px;
   padding: 15px 5px;
+}
+
+.galeriaAbout {
+  width: 60%;
+}
+
+.galeriaAbout img {
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*--- Página: CLASES ---*/
@@ -314,8 +325,20 @@ body {
 }
 
 .contentTiposClases {
-  background: #ededee;
   width: 100%;
+  /*
+    .relative{
+        position: relative;
+        z-index: 2;
+    }
+    .absolute{
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.3;
+    }
+    */
 }
 
 .imgClasesBg {
@@ -528,17 +551,6 @@ body {
 }
 
 /*--- Página: Tienda ---*/
-/* header tienda */
-.header_content.background_index.background_index-tienda {
-  height: 50vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/bk_tienda2.jpeg);
-  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/bk_tienda2.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-
 /*Carrousel
 .mycarousel{
     /*max-height:810px;
