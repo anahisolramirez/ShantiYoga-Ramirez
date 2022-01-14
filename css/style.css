@@ -75,34 +75,29 @@ body {
 }
 
 /* header index */
-.header_content {
+.header {
   height: 60vh;
-  position: relative;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
-.header_content .wave {
+.header .wave {
   position: absolute;
   width: 100%;
   bottom: -3%;
 }
 
-/* Background Banner */
-.header_content.background_index {
-  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url("../multimedia/prueba5.jpg");
-  background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../multimedia/prueba5.jpg");
-  background-position: center;
-  background-size: cover;
-  /*usando MIXIN*/
+.headerIndex {
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba5.jpg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba5.jpg);
 }
 
+/* Background Banner 
+.header_content.background_index{
+    @include fondosImagen ('../multimedia/prueba5.jpg'); /*usando MIXIN
+}*/
 .secBienvenida {
   background-color: #EDEDEE;
   font-family: poppins;
@@ -179,19 +174,17 @@ body {
   padding-right: 5px;
 }
 
+/*---------------------*/
 /*--- Página: About ---*/
-/* Background banner */
-.header_content.background_index.background_index-about {
-  height: 60vh;
-  width: 100%;
+/*---------------------*/
+/* Background Banner About*/
+.headerAbout {
   background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba7.jpg);
   background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba7.jpg);
-  background-position: center;
-  background-size: cover;
-  /* @include fondosImagen ('../multimedia/prueba7.jpg'); */
-  /*usando MIXIN*/
 }
 
+/* @include fondosImagen ('../multimedia/prueba7.jpg'); */
+/*usando MIXIN*/
 .secAbout .texto_sec1 {
   color: #929090;
   width: 80%;
@@ -224,23 +217,9 @@ body {
 }
 
 /*--- Página: CLASES ---*/
-/* Video background */
-.bg-video {
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100%;
-  background: black;
-  background-position: center;
-  background-size: contain;
-  -o-object-fit: cover;
-     object-fit: cover;
-  /*pantalla completa*/
-  -webkit-filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.7));
-          filter: opacity(70%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.7));
+.headerClases {
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba9.jpg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba9.jpg);
 }
 
 .contentClases {
@@ -403,9 +382,32 @@ body {
   /*GET MAP*/
 }
 
-/*--- Página: CONTACTO ---*/
+/*---------------------------*/
+/*--- Página: contacto ---*/
+/*---------------------------*/
+.headerContacto {
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../assets/slide4_desktop.jpeg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../assets/slide4_desktop.jpeg);
+}
+
 .sectionForm {
-  background: #ededee;
+  width: 100%;
+  position: relative;
+}
+
+.sectionForm::before {
+  content: "";
+  background: url(../assets/buda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /* Formulario */
@@ -449,6 +451,10 @@ body {
   background: #ff9d1d;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+.secSeparador {
+  height: 40vh;
 }
 
 .map {
@@ -519,13 +525,6 @@ body {
 }
 
 /* Responsive Media queries */
-/*A partir de 768px en adelante*/
-@media all and (max-width: 768px) {
-  .header_content {
-    height: 50vh;
-  }
-}
-
 /* Animaciones */
 /* Primera Animación Cambio de escala en Galería Grid */
 .section3_grid .contenedorGrid_galeria .uno, .dos, .tres {
@@ -552,18 +551,9 @@ body {
   --animate-duration: 1s;
 }
 
+/*----------------------*/
 /*--- Página: Tienda ---*/
-/*Carrousel
-.mycarousel{
-    /*max-height:810px;
-    object-fit: cover;
-    img{
-        mask-image: linear-gradient(to right, #fb30f1d3, #003f50d7);
-.header_content.background_index.background_index-tienda    }
-    @media all and (min-width: 1200px){
-        max-height: 1000px;
-    }
-}*/
+/*----------------------*/
 .carousel.slide {
   overflow: hidden;
 }
