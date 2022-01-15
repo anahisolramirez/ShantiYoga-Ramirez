@@ -305,19 +305,6 @@ body {
 
 .contentTiposClases {
   width: 100%;
-  /*
-    .relative{
-        position: relative;
-        z-index: 2;
-    }
-    .absolute{
-        position: absolute;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        opacity: 0.3;
-    }
-    */
 }
 
 .imgClasesBg {
@@ -411,9 +398,11 @@ body {
 }
 
 /* Formulario */
-.contentForm .myForm {
-  min-width: 400px;
-  max-width: 600px;
+.contentForm {
+  /*.myForm{
+        min-width: 300px;
+        max-width: 600px;
+    }*/
 }
 
 .contentForm form {
@@ -501,7 +490,8 @@ body {
 }
 
 .textContact h4 {
-  color: #23caaf;
+  color: #ff9d1d;
+  /*#23caaf*/
   font-size: 1.8rem;
   font-weight: 300;
 }

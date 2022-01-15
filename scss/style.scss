@@ -323,7 +323,7 @@ body{
             background: #fff;
             border: none;
             outline: none;
-            border-bottom: 3px solid $colorNaranja;
+            border-bottom: 3px solid rgb(0, 228, 152);
             padding:12px;
             border-radius: 2px;
             font-size: 14px;
@@ -378,7 +378,7 @@ body{
 }
 .textContact{
     h4{
-        color: #23caaf;
+        color: $colorNaranja; /*#23caaf*/
         font-size: 1.8rem;
         font-weight: 300;
     }
