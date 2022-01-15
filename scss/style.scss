@@ -125,6 +125,7 @@ body{
         padding-right: 5px;
     }
 }
+
 /*---------------------*/
 /*--- Página: About ---*/
 /*---------------------*/
@@ -224,19 +225,6 @@ body{
 }
 .contentTiposClases{
     width: 100%;
-    /*
-    .relative{
-        position: relative;
-        z-index: 2;
-    }
-    .absolute{
-        position: absolute;
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        opacity: 0.3;
-    }
-    */
 }
 
 .imgClasesBg{
@@ -320,7 +308,7 @@ body{
 /* Formulario */
 .contentForm{
     .myForm{
-        min-width: 400px;
+        min-width: 300px;
         max-width: 600px;
     }
     form{
@@ -431,6 +419,7 @@ body{
 .animate__animated.animate__slideInLeft {
     --animate-duration: 1s;
 }
+
 /*----------------------*/
 /*--- Página: Tienda ---*/
 /*----------------------*/
