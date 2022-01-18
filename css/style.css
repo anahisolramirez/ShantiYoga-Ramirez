@@ -381,6 +381,18 @@ body {
   background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../assets/slide4_desktop.jpeg);
 }
 
+@media all and (max-width: 800px) {
+  .headerContacto .wave {
+    margin-bottom: 35px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .headerContacto .wave {
+    margin-bottom: 10px;
+  }
+}
+
 .sectionForm {
   width: 100%;
   position: relative;
@@ -447,7 +459,7 @@ body {
 }
 
 .secSeparador {
-  height: 40vh;
+  height: 20vh;
 }
 
 .map {
@@ -462,6 +474,12 @@ footer .mylogo {
   width: 10rem;
 }
 
+@media all and (min-width: 1200px) {
+  footer .mylogo {
+    width: 13rem;
+  }
+}
+
 footer .redes {
   list-style: none;
 }
@@ -471,6 +489,36 @@ footer .redes img {
   color: #fff;
 }
 
+@media all and (min-width: 1200px) {
+  footer .redes img {
+    width: 2.5rem;
+    margin-top: 15px;
+  }
+}
+
+footer .formLabel {
+  color: #ff9d1d;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+footer .btnSubmit {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  background: #ff9d1d;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer .btnSubmit:hover {
+  background: #00e498;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/*----------*/
+/*BORRAR!!*/
 .footer-contenedor {
   /* margin: auto;*/
   height: 10vh;
@@ -508,6 +556,22 @@ footer .redes img {
   color: #01c77b;
 }
 
+.footer-contenedor .btnSubmit {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  background: #00e498;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footer-contenedor .btnSubmit:hover {
+  background: #ff9d1d;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/*--------HASTA ACÁ---------*/
 .textContact h4 {
   color: #fff;
   /*#23caaf*/

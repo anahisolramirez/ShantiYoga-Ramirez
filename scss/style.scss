@@ -288,6 +288,16 @@ body{
 
 .headerContacto{
     background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../assets/slide4_desktop.jpeg);
+    @media all and (max-width:800px) {
+        .wave{
+            margin-bottom: 35px;
+        }
+    }
+    @media all and (min-width:800px) {
+        .wave{
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .sectionForm{
@@ -320,7 +330,6 @@ body{
                 color: rgb(0, 228, 152);
                 font-weight: 400;
                 letter-spacing: 1px;
-                
             }
         .formInput{
             background: #fff;
@@ -348,7 +357,7 @@ body{
     }
 }
 .secSeparador{
-    height: 40vh;
+    height: 20vh;
 }
 .map{
     filter: grayscale(75%);
@@ -359,15 +368,41 @@ body{
 footer {
     .mylogo{
         width: 10rem;
+        @media all and (min-width: 1200px){
+            width: 13rem;
+        }
     }
     .redes{
         list-style: none;
         img{
             width: 2rem;
             color: #fff;
+            @media all and (min-width: 1200px){
+                width: 2.5rem;
+                margin-top: 15px;
+            }
         }
     }
+    .formLabel{
+        color: rgb(255, 157, 29);
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    .btnSubmit{
+        width: 100%;
+        font-size: 16px;
+        border: none;
+        background: rgb(255, 157, 29);
+        color: #fff;
+        padding: 15px 0;
+        &:hover{
+            background:rgb(0, 228, 152); 
+            transition: all .5s ease;
+        }
+    }    
 }
+/*----------*/
+/*BORRAR!!*/
 .footer-contenedor{
    /* margin: auto;*/
     height: 10vh;
@@ -392,7 +427,20 @@ footer {
             color: rgb(1, 199, 123);
         }
     }
+    .btnSubmit{
+            width: 100%;
+            font-size: 16px;
+            border: none;
+            background: rgb(0, 228, 152);
+            color: #fff;
+            padding: 15px 0;
+            &:hover{
+                background:rgb(255, 157, 29); 
+                transition: all .5s ease;
+            }
+        }    
 }
+/*--------HASTA ACÁ---------*/
 .textContact{
     h4{
         color: #fff; /*#23caaf*/
