@@ -119,10 +119,13 @@ body{
     }    
 }
 .beneficios{
+    h5{
+        font-size: 1.1rem;
+    }
     span{
         color: $colorTurquesa;
         font-size: 1.7rem;
-        padding-right: 5px;
+        padding-right: 15px;
     }
 }
 
@@ -296,7 +299,7 @@ body{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        opacity: 0.5;
+        opacity: 0.2;
         top: 0;
         left: 0;
         bottom: 0;
@@ -350,7 +353,24 @@ body{
 .map{
     filter: grayscale(75%);
 }
+/*--------------*/
 /*--- Footer ---*/
+/*--------------*/
+footer {
+    .mylogo{
+        width: 15rem;
+    }
+    .redes{
+        width: 15rem;
+        list-style: none;
+        align-items: center;
+        margin: auto;
+        img{
+            width: 3rem;
+            color: #fff;
+        }
+    }
+}
 .footer-contenedor{
    /* margin: auto;*/
     height: 10vh;
@@ -387,8 +407,6 @@ body{
         font-size: 1.5rem;
     }
 }
-
-
 .nav-footer ul{
     display: flex;
     flex-flow: row wrap;
@@ -441,9 +459,13 @@ body{
     }
 }
 .mymodal{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(13, 61, 51, 0.8);
     color: #fff;
     font-size: 1.2rem;
+    span{
+        color: #00e676;
+        font-weight: 700;
+    }
 }
 .paragraph{
     padding-top: 1rem;
