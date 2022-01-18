@@ -22,12 +22,17 @@ body{
     top: 0;
     width: 100%;
     .navbar-brand{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    img{
+        margin-right: 10px;
     }
 }
+
 .navbar-nav li a{
     color: #fff;
     font-size: 1.3rem;
+    
     &:hover{
         color: $colorVerde !important;
     }
@@ -366,7 +371,7 @@ body{
 /*--- Footer ---*/
 /*--------------*/
 footer {
-    background-color: rgba(0, 0, 0, 0.356);
+    /*background-color: rgba(0, 0, 0, 0.356);*//*#58f6bc*/
     background-image: linear-gradient(to top, #00343b 0%, #00fa9a9c 100%);
     
     /*background-image: linear-gradient(to top, #21b77bb4 0%, #134268c2 100%);*/
@@ -421,46 +426,7 @@ footer {
         
     }  
 }
-/*----------*/
-/*BORRAR!!*/
-.footer-contenedor{
-   /* margin: auto;*/
-    height: 10vh;
-    width: 100%;
-    background-color:#1beccd;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    .seguinos{
-        color: #fff;
-        font-size: 1.1rem;
-    }
-    .menu_footer{
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 300;
-        padding: 5px;
-        line-height: 30px;
-        &:hover{
-            color: rgb(1, 199, 123);
-        }
-    }
-    .btnSubmit{
-            width: 100%;
-            font-size: 16px;
-            border: none;
-            background: rgb(0, 228, 152);
-            color: #fff;
-            padding: 15px 0;
-            &:hover{
-                background:rgb(255, 157, 29); 
-                transition: all .5s ease;
-            }
-        }    
-}
-/*--------HASTA ACÁ---------*/
+
 .textContact{
     h4{
         color: rgb(139, 139, 139); /*#23caaf*/
@@ -471,13 +437,6 @@ footer {
     &span{
         font-size: 1.5rem;
     }
-}
-.nav-footer ul{
-    display: flex;
-    flex-flow: row wrap;
-}
-.nav-footer li{
-    list-style: none;
 }
 
 /* Animaciones */

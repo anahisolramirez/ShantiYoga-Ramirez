@@ -54,7 +54,11 @@ body {
 }
 
 .myNav .navbar-brand {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.myNav img {
+  margin-right: 10px;
 }
 
 .navbar-nav li a {
@@ -469,7 +473,8 @@ body {
 /*--- Footer ---*/
 /*--------------*/
 footer {
-  background-color: rgba(0, 0, 0, 0.356);
+  /*background-color: rgba(0, 0, 0, 0.356);*/
+  /*#58f6bc*/
   background-image: -webkit-gradient(linear, left bottom, left top, from(#00343b), to(#00fa9a9c));
   background-image: linear-gradient(to top, #00343b 0%, #00fa9a9c 100%);
   /*background-image: linear-gradient(to top, #21b77bb4 0%, #134268c2 100%);*/
@@ -540,61 +545,6 @@ footer .firma {
   color: #54f1b8;
 }
 
-/*----------*/
-/*BORRAR!!*/
-.footer-contenedor {
-  /* margin: auto;*/
-  height: 10vh;
-  width: 100%;
-  background-color: #1beccd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-contenedor .seguinos {
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.footer-contenedor .menu_footer {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 5px;
-  line-height: 30px;
-}
-
-.footer-contenedor .menu_footer:hover {
-  color: #01c77b;
-}
-
-.footer-contenedor .btnSubmit {
-  width: 100%;
-  font-size: 16px;
-  border: none;
-  background: #00e498;
-  color: #fff;
-  padding: 15px 0;
-}
-
-.footer-contenedor .btnSubmit:hover {
-  background: #ff9d1d;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-/*--------HASTA ACÁ---------*/
 .textContact h4 {
   color: #8b8b8b;
   /*#23caaf*/
@@ -605,20 +555,6 @@ footer .firma {
 
 .textContactspan {
   font-size: 1.5rem;
-}
-
-.nav-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
-.nav-footer li {
-  list-style: none;
 }
 
 /* Animaciones */
