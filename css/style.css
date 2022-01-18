@@ -377,20 +377,18 @@ body {
 /*--- Página: contacto ---*/
 /*---------------------------*/
 .headerContacto {
-  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../assets/slide4_desktop.jpeg);
-  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../assets/slide4_desktop.jpeg);
-}
-
-@media all and (max-width: 800px) {
-  .headerContacto .wave {
-    margin-bottom: 35px;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .headerContacto .wave {
-    margin-bottom: 10px;
-  }
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba444.jpg);
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba444.jpg);
+  /*@media all and (max-width:800px) {
+        .wave{
+            margin-bottom: 35px;
+        }
+    }
+    @media all and (min-width:800px) {
+        .wave{
+            margin-bottom: 10px;
+        }
+    }*/
 }
 
 .sectionForm {
@@ -404,7 +402,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  opacity: 0.2;
+  opacity: 0.1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -470,6 +468,16 @@ body {
 /*--------------*/
 /*--- Footer ---*/
 /*--------------*/
+footer {
+  background-color: rgba(0, 0, 0, 0.356);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00343b), to(#00fa9a9c));
+  background-image: linear-gradient(to top, #00343b 0%, #00fa9a9c 100%);
+  /*background-image: linear-gradient(to top, #21b77bb4 0%, #134268c2 100%);*/
+  /*background-image: linear-gradient(to top, #00fa9a9c 0%, #00343b 100%);*/
+  /*background-image: linear-gradient(to top, #00FA9A 0%, #004953 100%);*/
+  /*background-image: linear-gradient(to top, #00F260 0%, #0575E6 100%);*/
+}
+
 footer .mylogo {
   width: 10rem;
 }
@@ -493,6 +501,7 @@ footer .redes img {
   footer .redes img {
     width: 2.5rem;
     margin-top: 15px;
+    margin: 5px;
   }
 }
 
@@ -515,6 +524,20 @@ footer .btnSubmit:hover {
   background: #00e498;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+footer .navFooter {
+  font-size: 1.2rem !important;
+  padding: 1px !important;
+}
+
+footer .span {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+footer .firma {
+  color: #54f1b8;
 }
 
 /*----------*/
@@ -573,9 +596,9 @@ footer .btnSubmit:hover {
 
 /*--------HASTA ACÁ---------*/
 .textContact h4 {
-  color: #fff;
+  color: #8b8b8b;
   /*#23caaf*/
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
   padding-bottom: 10px;
 }
