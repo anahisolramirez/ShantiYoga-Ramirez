@@ -78,9 +78,11 @@ body {
 /* header index */
 .header {
   height: 60vh;
+  min-height: 500px;
   width: 100%;
   position: relative;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -91,14 +93,29 @@ body {
 }
 
 .headerIndex {
-  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url(../multimedia/prueba5.jpg);
-  background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba5.jpg);
+  background-image: url(../assets/indexMobile.jpeg);
 }
 
-/* Background Banner 
-.header_content.background_index{
-    @include fondosImagen ('../multimedia/prueba5.jpg'); /*usando MIXIN
-}*/
+@media all and (min-width: 900px) {
+  .headerIndex {
+    min-height: 600px;
+    background-image: url(../assets/indexDesktop.jpeg);
+  }
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*background: linear-gradient(to right, #30fb4428, #003f503a);*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#002a30c9), to(#00fa9a7c));
+  background: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);
+  opacity: 0.5;
+}
+
 .bgGris {
   background-color: #ededee;
 }
@@ -167,7 +184,8 @@ body {
 
 .imgBienvenida {
   height: 30vh;
-  background-image: url("../multimedia/prueba444.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(#30fb4428), to(#003f503a)), url("../assets/erik-brolin-ZARfCYDaVg0-unsplash.jpg");
+  background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../assets/erik-brolin-ZARfCYDaVg0-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
