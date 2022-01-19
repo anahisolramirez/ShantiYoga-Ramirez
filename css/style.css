@@ -552,7 +552,7 @@ body {
 
 @media all and (min-width: 900px) {
   .secSeparador {
-    height: 10vh;
+    height: 15vh;
   }
 }
 
@@ -648,6 +648,18 @@ footer .span {
 
 footer .firma {
   color: #54f1b8;
+}
+
+@media all and (min-width: 900px) {
+  .textContact {
+    margin-top: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .textContact {
+    margin-top: 30px;
+  }
 }
 
 .textContact h4 {

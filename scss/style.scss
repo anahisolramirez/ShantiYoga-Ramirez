@@ -373,6 +373,7 @@ body{
 .sectionForm{
     width: 100%;
     position: relative;
+    
     .wave{
         position: absolute;
         width: 100%;
@@ -434,7 +435,7 @@ body{
     height: 25vh;
     padding-top: 10px;
     @media all and (min-width: 900px){
-        height: 10vh;
+        height: 15vh;
     }
     p{
         color: #8df8d1;
@@ -444,7 +445,6 @@ body{
             font-size: 1.1rem;
         }
     }
-   
 }
 .mapa{
     filter: grayscale(75%);
@@ -510,6 +510,12 @@ footer {
     }  
 }
 .textContact{
+    @media all and (min-width: 900px){
+        margin-top: 20px;
+    }
+    @media all and (min-width: 1200px){
+        margin-top: 30px;
+    }
     h4{
         color: rgba(255, 157, 29, 0.644); /*#23caaf*/
         font-size: 1.4rem;
