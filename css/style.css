@@ -108,6 +108,7 @@ body {
   margin-top: -40px;
 }
 
+/*#8df8d1 COLOR OLA TURQUESA CONTACTO*/
 .secBienvenida {
   font-family: poppins;
 }
@@ -287,6 +288,12 @@ body {
 
 .contentTiposClases {
   width: 100%;
+}
+
+.bgOndas {
+  background: radial-gradient(circle at 100% 50%, transparent 20%, #00f0e418 21%, #00f0e418 34%, transparent 35%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, #00f0e418 21%, #00f0e418 34%, transparent 35%, transparent) 0 -50px;
+  background-color: #fff;
+  background-size: 75px 100px;
 }
 
 .imgClasesBg {
@@ -476,6 +483,13 @@ body {
   position: relative;
 }
 
+.sectionForm .wave {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .sectionForm::before {
   content: "";
   background: url(../assets/ContactoSucu.jpg);
@@ -530,13 +544,26 @@ body {
 }
 
 .secSeparador {
-  height: 20vh;
+  position: relative;
+  /*    background-color: #8df8d1;*/
+  height: 25vh;
+  padding-top: 10px;
+}
+
+@media all and (min-width: 900px) {
+  .secSeparador {
+    height: 10vh;
+  }
 }
 
 .secSeparador p {
-  color: #58F6BC;
+  color: #8df8d1;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.secSeparador p span {
+  font-size: 1.1rem;
 }
 
 .mapa {
@@ -624,7 +651,7 @@ footer .firma {
 }
 
 .textContact h4 {
-  color: #8b8b8b;
+  color: rgba(255, 157, 29, 0.644);
   /*#23caaf*/
   font-size: 1.4rem;
   font-weight: 500;
