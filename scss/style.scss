@@ -68,8 +68,9 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    /*background: linear-gradient(to right, #30fb4428, #003f503a);*/
-    background: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);
+    background: linear-gradient(to right, #3b220542, #00000075);
+    /*background: linear-gradient(to right, #30fb4428, #003f503a);
+    background: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);*/
     opacity: 0.5;
 }
 .bgGris{
@@ -127,9 +128,9 @@ body{
         }
     }    
 }
-.imgBienvenida{
+.imgFluidBienvenida{
     height:30vh;
-    background-image: linear-gradient(to right, #30fb4428, #003f503a), url("../assets/erik-brolin-ZARfCYDaVg0-unsplash.jpg");
+    background-image: linear-gradient(to right, #3b220528, #01141a3a), url("../assets/fluidHome.jpeg");
     background-attachment: fixed;
     background-position:center ;
     background-size: cover;
@@ -153,7 +154,15 @@ body{
 
 /* Background Banner About*/
 .headerAbout{
-    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba7.jpg);
+    background-image: url(../assets/aboutm.jpeg);
+    @media all and (min-width: 900px) {
+        min-height: 600px;
+        background-image: url(../assets/aboutDekstop.jpeg);
+    }
+    @media all and (min-width: 1300px) {
+        background-image: url(../assets/2000.jpeg);
+        min-height: 700px;
+    }
 } 
 /* @include fondosImagen ('../multimedia/prueba7.jpg'); *//*usando MIXIN*/    
 
@@ -174,8 +183,18 @@ body{
 /*--- Página: CLASES ---*/
 /*----------------------*/
 .headerClases{
-    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba9.jpg);
+    background-image: url(../assets/bgClasesMobile.jpeg);
+        @media all and (min-width: 660px) {
+            min-height: 600px;
+            background-image: url(../assets/bgClasesIpad.jpeg);
+    }
+    @media all and (min-width: 1200px) {
+        background-image: url(../assets/bgClasesDesktop.jpeg);
+        min-height: 700px;
+    }
+    
 }
+
 .contentClases{
     width: 90%;
     background: $colorBlanco;
@@ -236,9 +255,12 @@ body{
     background-color: #fff;
     background-size: 75px 100px;
 }
-.imgClasesBg{
+.imgFluidClases{
     height:30vh;
-    background-image: url("../multimedia/prueba9.jpg");
+    background-image: linear-gradient(to right, #3b220528, #01141a3a), url("../assets/fluidClasesMob.jpeg");
+    @media all and (min-width: 900px) {
+        background-image: linear-gradient(to right, #3b220528, #01141a3a), url("../assets/fluidClasesDesk.jpeg");
+    }
     background-attachment: fixed;
     background-position:center ;
     background-size: cover;
@@ -381,8 +403,26 @@ body{
 /*---------------------------*/
 
 .headerContacto{
-    background-image: linear-gradient(to right, #30fb4428, #003f503a), url(../multimedia/prueba444.jpg);
+    
+    background-image: url(../assets/bgContactoMobile.jpeg);
+     @media all and (min-width: 660px) {
+            min-height: 600px;
+            background-image: url(../assets/bgContactoDesktop.jpeg);
+    }
+
 }
+
+/*
+background-image: url(../assets/clasesMOB.jpeg);
+        @media all and (min-width: 660px) {
+            min-height: 600px;
+            background-image: url(../assets/ccc.jpeg);
+    }
+    @media all and (min-width: 1200px) {
+        background-image: url(../assets/uuu.jpeg);
+        min-height: 700px;
+    }
+*/
 
 .sectionForm{
     width: 100%;
@@ -452,7 +492,7 @@ body{
         height: 15vh;
     }
     p{
-        color: #8df8d1;
+        color: rgba(143, 142, 142, 0.671);
         font-size: 1.3rem;
         font-weight: 400;
         span{
