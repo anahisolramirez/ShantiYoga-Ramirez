@@ -208,19 +208,19 @@ body {
 /*---------------------*/
 /* Background Banner About*/
 .headerAbout {
-  background-image: url(../assets/aboutm.jpeg);
+  background-image: url(../assets/bgAboutMobile.jpeg);
 }
 
 @media all and (min-width: 900px) {
   .headerAbout {
     min-height: 600px;
-    background-image: url(../assets/aboutDekstop.jpeg);
+    background-image: url(../assets/bgAboutIpad.jpeg);
   }
 }
 
 @media all and (min-width: 1300px) {
   .headerAbout {
-    background-image: url(../assets/2000.jpeg);
+    background-image: url(../assets/bgAboutDekstop.jpeg);
     min-height: 700px;
   }
 }
@@ -236,6 +236,50 @@ body {
   font-size: 0.9rem;
   line-height: 2rem;
   font-weight: 300;
+}
+
+.secAbout .titClases1 {
+  font-size: 1.4rem;
+  color: #58F6BC;
+  -webkit-box-shadow: 0 0.1em rgba(255, 255, 255, 0.562);
+          box-shadow: 0 0.1em rgba(255, 255, 255, 0.562);
+}
+
+@media all and (min-width: 768px) {
+  .secAbout .titClases1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .secAbout .titClases1 {
+    font-size: 2rem;
+  }
+}
+
+.secAbout .galeriaAbout img {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.secAbout .galeriaAbout img:hover {
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+}
+
+.contentGaleria {
+  background: #7a7c7b;
+  height: 60vh;
+}
+
+.contentGaleria .imgExt {
+  max-width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contentGaleria .imgChica {
+  max-width: 300px;
 }
 
 /*----------------------*/
@@ -537,17 +581,42 @@ body {
   }
 }
 
-/*
-background-image: url(../assets/clasesMOB.jpeg);
-        @media all and (min-width: 660px) {
-            min-height: 600px;
-            background-image: url(../assets/ccc.jpeg);
-    }
-    @media all and (min-width: 1200px) {
-        background-image: url(../assets/uuu.jpeg);
-        min-height: 700px;
-    }
-*/
+.secFraseContacto {
+  position: relative;
+  height: 25vh;
+  padding-top: 10px;
+}
+
+@media all and (min-width: 900px) {
+  .secFraseContacto {
+    height: 15vh;
+  }
+}
+
+.secFraseContacto p {
+  color: rgba(143, 142, 142, 0.671);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media all and (min-width: 992px) {
+  .secFraseContacto p {
+    font-size: 1.1rem;
+    padding-top: 20px;
+  }
+}
+
+.secFraseContacto p span {
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .secFraseContacto p span {
+    font-size: 0.9rem;
+    padding-top: 20px;
+  }
+}
+
 .sectionForm {
   width: 100%;
   position: relative;
@@ -575,6 +644,31 @@ background-image: url(../assets/clasesMOB.jpeg);
   z-index: -1;
 }
 
+@media all and (min-width: 900px) {
+  .sectionForm .textContact {
+    margin-top: 20px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .sectionForm .textContact {
+    margin-top: 30px;
+  }
+}
+
+.sectionForm .textContact h4 {
+  color: rgba(255, 157, 29, 0.644);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media all and (min-width: 992px) {
+  .sectionForm .textContact h4 {
+    font-size: 1.4rem;
+    padding-top: 20px;
+  }
+}
+
 /* Formulario */
 .contentForm form {
   background: rgba(0, 0, 0, 0.7);
@@ -584,6 +678,13 @@ background-image: url(../assets/clasesMOB.jpeg);
   color: #00e498;
   font-weight: 400;
   letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .contentForm form .formLabel {
+    font-size: 0.9rem;
+  }
 }
 
 .contentForm form .formInput {
@@ -593,47 +694,35 @@ background-image: url(../assets/clasesMOB.jpeg);
   border-bottom: 3px solid #00e498;
   padding: 12px;
   border-radius: 2px;
-  font-size: 14px;
   color: #ff9d1d;
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .contentForm form .formInput {
+    font-size: 0.9rem;
+  }
 }
 
 .contentForm form .btnSubmit {
   width: 100%;
-  font-size: 16px;
   border: none;
   background: #00e498;
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .contentForm form .btnSubmit {
+    font-size: 0.9rem;
+  }
 }
 
 .contentForm form .btnSubmit:hover {
   background: #ff9d1d;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-}
-
-.secSeparador {
-  position: relative;
-  /*    background-color: #8df8d1;*/
-  height: 25vh;
-  padding-top: 10px;
-}
-
-@media all and (min-width: 900px) {
-  .secSeparador {
-    height: 15vh;
-  }
-}
-
-.secSeparador p {
-  color: rgba(143, 142, 142, 0.671);
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.secSeparador p span {
-  font-size: 1.1rem;
 }
 
 .mapa {
@@ -649,22 +738,15 @@ background-image: url(../assets/clasesMOB.jpeg);
 footer {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#002a30c9), to(#00fa9a7c));
   background-image: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);
-  /*background-color: rgba(0, 0, 0, 0.356);*/
-  /*#58f6bc*/
-  /*background-image: linear-gradient(to top, #00343b 0%, #00fa9a9c 100%);*/
-  /*background-image: linear-gradient(to top, #21b77bb4 0%, #134268c2 100%);*/
-  /*background-image: linear-gradient(to top, #00fa9a9c 0%, #00343b 100%);*/
-  /*background-image: linear-gradient(to top, #00FA9A 0%, #004953 100%);*/
-  /*background-image: linear-gradient(to top, #00F260 0%, #0575E6 100%);*/
 }
 
 footer .mylogo {
-  width: 10rem;
+  width: 9rem;
 }
 
 @media all and (min-width: 1200px) {
   footer .mylogo {
-    width: 13rem;
+    width: 11rem;
   }
 }
 
@@ -685,10 +767,52 @@ footer .redes img {
   }
 }
 
+footer .navFooter {
+  font-size: 1.1rem !important;
+  padding: 1px !important;
+}
+
+@media all and (min-width: 992px) {
+  footer .navFooter {
+    font-size: 1.3rem;
+  }
+}
+
+footer h4 {
+  font-size: 1rem;
+}
+
+@media all and (min-width: 1200px) {
+  footer h4 {
+    font-size: 1.3rem;
+  }
+}
+
 footer .formLabel {
   color: #ff9d1d;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  footer .formLabel {
+    font-size: 0.9rem;
+  }
+}
+
+footer .formInput {
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #ff9d1d;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  footer .formInput {
+    font-size: 0.9rem;
+  }
 }
 
 footer .btnSubmit {
@@ -697,7 +821,14 @@ footer .btnSubmit {
   border: none;
   background: #ff9d1d;
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  footer .btnSubmit {
+    font-size: 0.9rem;
+  }
 }
 
 footer .btnSubmit:hover {
@@ -706,41 +837,35 @@ footer .btnSubmit:hover {
   transition: all .5s ease;
 }
 
-footer .navFooter {
-  font-size: 1.2rem !important;
-  padding: 1px !important;
+footer .copy {
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  footer .copy {
+    font-size: 0.9rem;
+  }
 }
 
 footer .span {
-  font-size: 1.3rem;
   padding: 5px;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  footer .span {
+    font-size: 0.9rem;
+  }
 }
 
 footer .firma {
   color: #54f1b8;
+  font-size: 0.8rem;
 }
 
-@media all and (min-width: 900px) {
-  .textContact {
-    margin-top: 20px;
+@media all and (min-width: 992px) {
+  footer .firma {
+    font-size: 0.9rem;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .textContact {
-    margin-top: 30px;
-  }
-}
-
-.textContact h4 {
-  color: rgba(255, 157, 29, 0.644);
-  /*#23caaf*/
-  font-size: 1.4rem;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-
-.textContactspan {
-  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
