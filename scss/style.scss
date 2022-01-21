@@ -69,8 +69,6 @@ body{
     top: 0;
     left: 0;
     background: linear-gradient(to right, #3b220542, #00000075);
-    /*background: linear-gradient(to right, #30fb4428, #003f503a);
-    background: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);*/
     opacity: 0.5;
 }
 .bgGris{
@@ -80,17 +78,22 @@ body{
     background-color: #fff;
     margin-top: -40px;
 }
-/*#8df8d1 COLOR OLA TURQUESA CONTACTO*/
 .secBienvenida{
     font-family: poppins;
     .texto_sec1{
         color: #929090;
         margin: auto;
         text-align: center;
-        font-size: 0.9rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
         line-height: 2rem;
         font-weight: 300;
+        font-size: 0.8rem;
+        @media all and (min-width: 576px){
+            font-size: 0.9rem;
+        }
+        @media all and (min-width: 992px){
+            font-size: 1rem;
+        }
     }
     h1{
         color: #58f6bc;
@@ -111,6 +114,12 @@ body{
     }
     .iconTecnicas{
         width: 150px;
+    }
+    .text_card{
+        font-size: 0.7rem;
+        @media all and (min-width: 576px){
+            font-size: 0.8rem;
+        }
     }
 }
 .galeriaInicio{
@@ -148,9 +157,9 @@ body{
     }
 }
 
-/*---------------------*/
+/*----------------------*/
 /*--- Página: About ---*/
-/*---------------------*/
+/*--------------------*/
 
 /* Background Banner About*/
 .headerAbout{
@@ -164,9 +173,10 @@ body{
         min-height: 700px;
     }
 } 
-/* @include fondosImagen ('../multimedia/prueba7.jpg'); *//*usando MIXIN*/    
-
 .secAbout{
+    .iconFlores{
+        max-height: 100px;
+    }
     .texto_sec1{
         color: #929090;
         width: 80%;
@@ -182,21 +192,20 @@ body{
         color: $colorTurquesa;
         box-shadow: 0 .1em rgba(255, 255, 255, 0.562);
         @media all and (min-width: $point-md){
-            font-size: 1.8rem;
+        font-size: 1.8rem;
         }
         @media all and (min-width: $point-lg){
-            font-size: 2rem;
+        font-size: 2rem;
         }
     }
     .galeriaAbout{
         img{
         transition: all ease-in-out 0.2s;
-        &:hover{
-        filter: grayscale(0.9);
-        }
+            &:hover{
+            filter: grayscale(0.9);
+            }
         }  
-    }
-    
+    }   
 }
 .contentGaleria{
     background: #7a7c7b;
@@ -209,9 +218,11 @@ body{
         max-width: 300px;
     }
 }
-/*----------------------*/
+
+/*-----------------------*/
 /*--- Página: CLASES ---*/
-/*----------------------*/
+/*---------------------*/
+
 .headerClases{
     background-image: url(../assets/bgClasesMobile.jpeg);
         @media all and (min-width: 660px) {
@@ -222,9 +233,7 @@ body{
         background-image: url(../assets/bgClasesDesktop.jpeg);
         min-height: 700px;
     }
-    
 }
-
 .contentClases{
     width: 90%;
     background: $colorBlanco;
@@ -240,9 +249,27 @@ body{
     @media all and (min-width: $point-lg){
         font-size: 1.2rem;
     }
+    .iconFlores{
+        max-height: 100px;
+    }
+    .iconMeditacion{
+        max-width: 300px;
+    }
     .iconClases{
         max-width: 7rem;
         margin-top: -75px;
+    }
+    .textClases{
+        font-size: 0.9rem;
+        @media all and (min-width: 992px){
+            font-size: 1.1rem;
+        }
+    }
+    .textClasesDos{
+        font-size: 0.8rem;
+        @media all and (min-width: 992px){
+            font-size: 1rem;
+        }
     }
     .titClases1{
         font-size: 1.4rem;
@@ -370,11 +397,30 @@ body{
         font-weight: map-get($font-weights, medium); /*GET MAP*/
     }
 }
-/*----------------------*/
+
+/*-----------------------*/
 /*--- Página: Tienda ---*/
-/*----------------------*/
+/*---------------------*/
+
 .carousel.slide{
     overflow: hidden;    
+}
+.paragraph{
+    padding-top: 1rem;
+    color: #2e8d7f;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    @media all and (min-width: 992px){
+        font-size: 1rem;   
+    }
+}
+.paragraph2{
+    margin-top: 2px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    @media all and (min-width: 992px){
+        font-size: 0.9rem;   
+    }
 }
 .mycard{
     border: none;
@@ -385,6 +431,11 @@ body{
         margin: 0;
         padding: 0;
         --bs-gutter-x: 0;
+    }
+    .card-body{
+        p{
+            color: #2e8d7f;
+        }
     }
     .myBtn{
         background-color: $colorVerde;
@@ -400,25 +451,8 @@ body{
     color: #fff;
     font-size: 1.2rem;
     span{
-        color: #00e676;
+        color: $colorNaranja;
         font-weight: 700;
-    }
-}
-.paragraph{
-    padding-top: 1rem;
-    font-size: 1rem;
-    color: #2e8d7f;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.paragraph2{
-    font-size: 0.9rem;
-    margin-top: 2px;
-}
-/* Cards con ProdUctos de Tienda */
-.card-body{
-    p{
-        color: #2e8d7f;
     }
 }
 .card-transform{
@@ -428,9 +462,9 @@ body{
     }
 }
 
-/*---------------------------*/
+/*-------------------------*/
 /*--- Página: contacto ---*/
-/*---------------------------*/
+/*-----------------------*/
 
 .headerContacto{
     background-image: url(../assets/bgContactoMobile.jpeg);
@@ -448,6 +482,8 @@ body{
     }
     p{
         color: rgba(143, 142, 142, 0.671);
+        letter-spacing: 1px;
+
         font-size: 0.9rem;
         font-weight: 400;
         @media all and(min-width:992px){

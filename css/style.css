@@ -112,8 +112,6 @@ body {
   left: 0;
   background: -webkit-gradient(linear, left top, right top, from(#3b220542), to(#00000075));
   background: linear-gradient(to right, #3b220542, #00000075);
-  /*background: linear-gradient(to right, #30fb4428, #003f503a);
-    background: linear-gradient(to top, #002a30c9 0%, #00fa9a7c 100%);*/
   opacity: 0.5;
 }
 
@@ -126,7 +124,6 @@ body {
   margin-top: -40px;
 }
 
-/*#8df8d1 COLOR OLA TURQUESA CONTACTO*/
 .secBienvenida {
   font-family: poppins;
 }
@@ -135,10 +132,22 @@ body {
   color: #929090;
   margin: auto;
   text-align: center;
-  font-size: 0.9rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   line-height: 2rem;
   font-weight: 300;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 576px) {
+  .secBienvenida .texto_sec1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .secBienvenida .texto_sec1 {
+    font-size: 1rem;
+  }
 }
 
 .secBienvenida h1 {
@@ -163,6 +172,16 @@ body {
 
 .secBienvenida .iconTecnicas {
   width: 150px;
+}
+
+.secBienvenida .text_card {
+  font-size: 0.7rem;
+}
+
+@media all and (min-width: 576px) {
+  .secBienvenida .text_card {
+    font-size: 0.8rem;
+  }
 }
 
 .galeriaInicio {
@@ -203,9 +222,9 @@ body {
   padding-right: 15px;
 }
 
-/*---------------------*/
+/*----------------------*/
 /*--- Página: About ---*/
-/*---------------------*/
+/*--------------------*/
 /* Background Banner About*/
 .headerAbout {
   background-image: url(../assets/bgAboutMobile.jpeg);
@@ -225,8 +244,10 @@ body {
   }
 }
 
-/* @include fondosImagen ('../multimedia/prueba7.jpg'); */
-/*usando MIXIN*/
+.secAbout .iconFlores {
+  max-height: 100px;
+}
+
 .secAbout .texto_sec1 {
   color: #929090;
   width: 80%;
@@ -282,9 +303,9 @@ body {
   max-width: 300px;
 }
 
-/*----------------------*/
+/*-----------------------*/
 /*--- Página: CLASES ---*/
-/*----------------------*/
+/*---------------------*/
 .headerClases {
   background-image: url(../assets/bgClasesMobile.jpeg);
 }
@@ -327,9 +348,37 @@ body {
   }
 }
 
+.contentClases .iconFlores {
+  max-height: 100px;
+}
+
+.contentClases .iconMeditacion {
+  max-width: 300px;
+}
+
 .contentClases .iconClases {
   max-width: 7rem;
   margin-top: -75px;
+}
+
+.contentClases .textClases {
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 992px) {
+  .contentClases .textClases {
+    font-size: 1.1rem;
+  }
+}
+
+.contentClases .textClasesDos {
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .contentClases .textClasesDos {
+    font-size: 1rem;
+  }
 }
 
 .contentClases .titClases1 {
@@ -498,11 +547,36 @@ body {
   /*GET MAP*/
 }
 
-/*----------------------*/
+/*-----------------------*/
 /*--- Página: Tienda ---*/
-/*----------------------*/
+/*---------------------*/
 .carousel.slide {
   overflow: hidden;
+}
+
+.paragraph {
+  padding-top: 1rem;
+  color: #2e8d7f;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 992px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+.paragraph2 {
+  margin-top: 2px;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+@media all and (min-width: 992px) {
+  .paragraph2 {
+    font-size: 0.9rem;
+  }
 }
 
 .mycard {
@@ -517,6 +591,10 @@ body {
   margin: 0;
   padding: 0;
   --bs-gutter-x: 0;
+}
+
+.mycard .card-body p {
+  color: #2e8d7f;
 }
 
 .mycard .myBtn {
@@ -535,26 +613,8 @@ body {
 }
 
 .mymodal span {
-  color: #00e676;
+  color: #ff9d1d;
   font-weight: 700;
-}
-
-.paragraph {
-  padding-top: 1rem;
-  font-size: 1rem;
-  color: #2e8d7f;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.paragraph2 {
-  font-size: 0.9rem;
-  margin-top: 2px;
-}
-
-/* Cards con ProdUctos de Tienda */
-.card-body p {
-  color: #2e8d7f;
 }
 
 .card-transform {
@@ -567,9 +627,9 @@ body {
           transform: scale(1.05);
 }
 
-/*---------------------------*/
+/*-------------------------*/
 /*--- Página: contacto ---*/
-/*---------------------------*/
+/*-----------------------*/
 .headerContacto {
   background-image: url(../assets/bgContactoMobile.jpeg);
 }
@@ -595,6 +655,7 @@ body {
 
 .secFraseContacto p {
   color: rgba(143, 142, 142, 0.671);
+  letter-spacing: 1px;
   font-size: 0.9rem;
   font-weight: 400;
 }
